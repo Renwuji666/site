@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.mian {
+  width: 1100px;
+  // height: 500px;
+  margin: 0 auto;
+}
+.mian .mian_title {
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.mian .mian_bd {
+  display: flex;
+}
+.mian .mian_bd .mian_bd_left {
+  width: 350px;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_top {
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 5px;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_hd {
+  padding: 20px;
+  border-bottom: 1px solid #ebeef5;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_bd {
+  padding: 15px;
+  font-size: 14px;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_bd ul li {
+  display: flex;
+  align-items: center;
+  padding:7px;
+  margin-top: 10px;
+}
+
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_bd2 ul li {
+  display: flex;
+  align-items: center;
+
+
+  margin-top: 10px;
+}
+
+
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_bd ul li .li_left {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #303133;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_bd ul li .li_right {
+  word-break: break-all;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_top .mian_bd_left_top_bd .mian_bd_left_detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.mian .mian_bd .mian_bd_left .mian_bd_left_bd {
+  margin-top: 30px;
+}
+.mian .mian_bd .mian_bd_right {
+  width: 760px;
+  margin-left: 30px;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 5px;
+}
+.mian .mian_bd .mian_bd_right .mian_bd_right_hd {
+  padding: 20px;
+  border-bottom: 2px solid rgb(84, 123, 232);
+}
+.mian .mian_bd .mian_bd_right .mian_bd_right_bd {
+  padding: 20px;
+}
+.mian .mian_bd .mian_bd_right .mian_bd_right_bd .mian_bd_right_bd_message {
+  height: 602px;
+  min-height: 602px;
+  font-size: 18px;
+  font-family: 宋体;
+}
+.mian .mian_bd .mian_bd_right .mian_bd_right_bd .mian_bd_right_bd_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}

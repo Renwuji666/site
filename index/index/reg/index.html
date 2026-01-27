@@ -1,0 +1,146 @@
+<!--
+Author: 17sucai
+Author URL: http://www.17sucai.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <base href="../../../">
+
+    <title>广西海外矿业产业联合会</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+        content="Report Login Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- //Meta tag Keywords -->
+
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="/Public/kuanglian/dl/css/style.css" type="text/css" media="all" />
+    <!--//Style-CSS -->
+
+    <link rel="stylesheet" href="/Public/kuanglian/dl/css/font-awesome.min.css" type="text/css" media="all">
+
+</head>
+
+<body>
+
+    <!-- form section start -->
+    <section class="w3l-hotair-form" style="display:block">
+     <div style="width:100%; margin:0 auto 0; padding-left: 35% ">
+            <img src="static/img/logo.png" style=" width:50%;  ">
+        </div>
+        <h1>广西海外矿业产业联合会</h1>
+        <div class="container">
+            <!-- /form -->
+            <div class="workinghny-form-grid">
+                <div class="main-hotair">
+                    <div class="content-wthree" style="flex-basis: 100%;">
+                        <h2>会员注册</h2>
+                        <form action="" method="post" id="formsub">
+                            <!-- <input type="text" class="text" name="text" placeholder="请输入您的账户" required="" autofocus> -->
+                            <select name="type" placeholder="" id="type" style="width: 100%;margin-bottom: 15px;
+                                                                                font-size: 16px;
+                                                                                color: #999;
+                                                                                text-align: left;
+                                                                                padding: 14px 20px;
+                                                                                width: 100%;
+                                                                                display: inline-block;
+                                                                                box-sizing: border-box;
+                                                                                border: none;
+                                                                                outline: none;
+                                                                                background: #f7fafc;
+                                                                                border: 1px solid #e5e5e5;">
+                                <option value="0">请选择会员类型</option>
+                                <option value="1">个人会员</option>
+                                <option value="2">单位会员</option>
+                            </select>
+                            <input type="text" class="text person" name="dw_name" placeholder="请输入您的单位名称" required="" autofocus>
+                            <input type="text" class="text person" name="dw_addr" placeholder="请输入您的单位通讯地址" required="" autofocus>
+                            <input type="text" class="text person" name="dw_code" placeholder="请输入您的机构代码证号" required="" autofocus>
+                            <input type="text" class="text" name="name" placeholder="请输入您的真实姓名" required="" autofocus>
+                            <input type="text" class="text" name="mobile" placeholder="请输入您的登陆手机" required="" autofocus>
+                            <input type="password" class="password pwd1" name="password" placeholder="请输入您的密码" required="" autofocus>
+                            <input type="password" class="password pwd2" name="password2" placeholder="请重复您的密码" required="" autofocus>
+                            <input type="text" class="text" name="email" placeholder="请输入您的邮箱" required="" autofocus>
+                            <button class="btn tijiao" type="submit">确认注册</button>
+                        </form>
+                        <p class="account">下载 <a href="http://www.gxhkl.com/data/广西海外矿业产业联合会申请入会登记表2022.3.docx">会员申请表</a></p>
+                        <p class="account">已有账号?前往 <a href="index/index/dl">登陆</a></p>
+                    </div>
+                    <!-- <div class="w3l_form align-self">
+                        <div class="left_grid_info">
+                            <img src="/Public/kuanglian/dl/images/1.png" alt="" class="img-fluid">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- //form -->
+        </div>
+        <!-- copyright-->
+        <div class="copyright text-center">
+            <p class="copy-footer-29">© 2023 Report Login Form. All rights reserved <a
+                        href="#">广西海外矿业产业联合会</a></p>
+        </div>
+        <!-- //copyright-->
+    </section>
+    <!-- //form section start -->
+</body>
+<script src="/Public/Qiyezhan/js/jquery.min.js"></script>
+<script>
+    $('.person').hide();
+
+    $('.tijiao').click(function(event) {
+
+        var type = $('#type').val();
+
+        if(type==0){
+            alert('请选择会员类型');return false;
+        }
+        var name = $('.frcont_name').val();
+        var tel = $('.frcont_tel').val();
+        var pwd1 = $('.pwd1').val();
+        var pwd2 = $('.pwd2').val();
+        // var content = $('.frcont_content').val();
+
+        if (name=="") {
+            alert('请填写姓名！')
+            return false;
+        }
+        if (tel=="") {
+            alert('请填写电话！')
+            return false;
+        }
+        if (pwd1=="") {
+            alert('请设置密码！')
+            return false;
+        }
+        if (pwd2!=pwd1) {
+            alert('两次输入的密码不一致！')
+            return false;
+        }
+
+        $('#formsub').submit();
+    });
+    $('#type').change(function(event) {
+        var type = $(this).val();
+        if(type==1){
+            $('.person').hide();return false;
+        }
+        if(type==2){
+            $('.person').show();return false;
+        }
+        alert('请选择会员类型');
+
+    });
+    // $('#type2').click(function(event) {
+    //     $('.person').show()
+    // });
+</script>
+</html>
+
+
+
+
+

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.mian_box {
+  width: 1100px;
+  margin: 0 auto;
+}
+.mian_box .mian_box_remmen {
+  /* 轮播图图片 */
+  /*插件的wrapper 这是关键， 覆盖插件默认切换效果为匀速*/
+}
+.mian_box .mian_box_remmen .mian_box_remmen_title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.mian_box .mian_box_remmen .mian_box_remmen_title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.mian_box .mian_box_remmen .swiper-container {
+  width: 1100px;
+  height: 128px;
+}
+.mian_box .mian_box_remmen .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.mian_box .mian_box_remmen .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.mian_box .mian_box_kuangye {
+  margin-top: 40px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_search {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_search .mian_box_kuangye_search_item {
+  width: 180px;
+  margin-right: 20px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li .li_first {
+  width: 276px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li .li_second {
+  width: 164px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li .li_third {
+  width: 140px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li .li_fourth {
+  width: 150px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li .li_fifth {
+  width: 150px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li .li_sixth {
+  width: 220px;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li:nth-child(1) {
+  background-color: #ecf6ff;
+  font-size: 18px;
+  line-height: 28px;
+  color: #2c3e50;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li:nth-child(n+2) {
+  border-bottom: 1px solid #f0f0f0;
+  height: 30px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_table ul li:nth-child(n+2):hover {
+  color: #199ff8;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_btn .mian_box_kuangye_item {
+  width: 180px;
+  padding: 10px 0;
+  background-color: #ecf6ff;
+  text-align: center;
+  border-radius: 5px;
+  color: #606266;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_btn .mian_box_kuangye_item:hover {
+  cursor: pointer;
+  color: #409eff;
+  border-color: #c6e2ff;
+}
+.mian_box .mian_box_kuangye .mian_box_kuangye_btn .mian_box_kuangye_list_error {
+  width: 180px;
+  padding: 10px 0;
+  border: 1px solid #dcdfe6;
+  text-align: center;
+  border-radius: 5px;
+  cursor: not-allowed;
+  color: #c0c4cc;
+}

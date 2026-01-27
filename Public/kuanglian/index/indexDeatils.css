@@ -1,0 +1,478 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../../kuanglian/static//img/body.png) top center no-repeat;
+    overflow-y: scroll;
+    font: 12px/160% arial,\5b8b\4f53 sans-serif;
+    width: 100%;
+}
+ul{
+    padding-inline-start: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.miniNav{
+    min-width: 1100px;
+    height: 25px;
+    line-height: 25px;
+    background: url(../static/img/miniNav_bg.png);
+}
+.miniNav div a{
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.mianBox{
+    width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+.miniNav-left{
+    padding: 0px 10px;
+    color: rgba(255,255,255,0.5)
+}
+.miniNav-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* float: right; */
+    /* display: block; */
+    padding-left: 79%;
+}
+.miniNav-right div{
+    line-height: 25px;
+    display: inline;
+    padding: 3px 5px;
+    font: 12px/160% arial,\5b8b\4f53 sans-serif;
+}
+.clearBoth{
+    clear: both;
+}
+.nav_toolbar{
+    height: 134px;
+    min-width: 1100px;
+    position: relative;
+}
+.linkbar{
+    float: right;
+    margin-right: 25px;
+}
+.linkbar ul {
+    float:left;
+    position: relative;
+    padding-left:15px;
+    padding-top: 15px;
+    list-style: none;
+}
+.linkbar ul li{
+    float: left;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+.linkbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 69px;
+    white-space: nowrap;
+    display: block;
+}
+.menu{
+    margin: 0 auto;
+    padding: 0;
+    width: 1100px;
+    height: 40px;
+}
+.menu ul{
+    display:none;
+    padding-inline-start: 0px;
+}
+.menu li{
+    list-style: none;
+    border-left: #58a5fe solid 1px;
+    float: left;
+    position: relative;
+    width: 136px;
+    height: 40px;
+    text-align: center;
+}
+.menu li a{
+    color: #ffffff;
+    display: block;
+    line-height: 40px;
+    padding: 0px;
+    font-family: '微软雅黑',sans-serif;
+    text-decoration: none;
+}
+.menu li ul li a{color:#ffffff;display:block;line-height:40px;padding:0px}
+.menu li:hover > a{background:url(../../kuanglian/static/img/navhover_bg.png) repeat-x;text-decoration:none}
+.menu li:hover > ul{display:block;*left:-22px}
+.menu ul li{display:block;height:40px;float:none;background:url(../../kuanglian/static/img/nav_bg.png) repeat-x;border-top:#58a5fe solid 1px;border-left:none}
+.menu ul li:hover a,.menu li:hover li a{background:none;color:#ffffff;text-align:center}
+.menu ul a{display:block;height:auto;font-size:14px;word-wrap:break-word}
+.menu ul a:hover,
+.menu ul li:hover > a{
+    background:url(../../kuanglian/static//img/navhover_bg.png) repeat-x;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.nav{
+    font: 12px/160% arial,\5b8b\4f53 sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #2b2b2b;
+    background: url(../../kuanglian/static/img/nav_bg.png) repeat-x;
+    height: 40px;
+    z-index: 99;
+    position: relative;
+    min-width: 1100px;
+}
+.hot_title {
+    margin: 55px 0 25px
+}
+.textCenter{
+    text-align: center;
+}
+.mainBox{
+    width: 1100px;
+    margin: 0 auto;
+    clear: both;
+}
+
+
+.search{
+    float: right;
+    display: inline;
+    width: 270px;
+    right: 8px;
+    position: relative;
+    background: url(../static/img/search.png) no-repeat;
+}
+.search_input{
+    width: 320px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    text-indent: 10px;
+    color: #fff;
+    background: none;
+    outline: none;
+}
+.search_btn {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    right: 9px;
+    top: 0px;
+    background: url(../static/img/search_btn.png) center no-repeat;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+.local_box {
+    height: 50px;
+    background: url(../../kuanglian/static/h5img/local_index.png) 4px no-repeat;
+    padding-left: 35px;
+}
+.local_ul li {
+    color: #a1a7b2;
+    line-height: 50px;
+    float: left;
+    padding-right: 10px;
+}
+.local_ul li a {
+    color: #a1a7b2;
+}
+.local_ul li.noLink {
+    background: none;
+    padding-right: 6px;
+}
+.main_content {
+    padding: 5px 0px;
+    background: #fff;
+    border: #d5dce6 solid 1px;
+    position: relative;
+}
+.main_content .main_content_title {
+    font-size: 38px;
+    color: #333;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 45px;
+    font-family: "微软雅黑","宋体";
+    padding: 0px 100px;
+}
+.szty {
+    width: 80%;
+    text-align: center;
+}
+.main_content .main_content_date {
+    color: #808080;
+    margin-right: 25px;
+    font-family: "宋体";
+}
+.main_content .attribute {
+    border-bottom: #d4d4d6 solid 2px;
+    // padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.main_content .content_left {
+    width: 679px;
+    padding: 0 23px;
+}
+.main_content .info_content {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "宋体";
+}
+.main_content .info_content p {
+    margin-top: 15px;
+}
+.page {
+    margin: 30px 0;
+    line-height: 30px;
+    font-size: 16px;
+}
+.editor {
+    text-align: right;
+    font-size: 14px;
+    font-family: "宋体";
+}
+.blank18 {
+    clear: both;
+    height: 18px;
+    overflow: hidden;
+    display: block;
+}
+.main_content .content_right {
+    width: 330px;
+}
+.main-2 {
+    width: 330px;
+    height: auto;
+    border-top: #999 solid 2px;
+}
+.title {
+    border-bottom: 1px solid #dee2e6;
+    height: 35px;
+    line-height: 35px;
+}
+.title_name {
+    font-size: 16px;
+    color: #ccc;
+}
+title {
+    line-height: 35px;
+}
+.title_name a.hover {
+    background: url(../../kuanglian/static/img/title_ico.png) bottom no-repeat;
+    margin-top: -2px;
+    border-top: #de1f1a solid 2px;
+    background-position: 90px 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.title_name a {
+    display: inline-block;
+    font-size: 16px;
+    color: #3f5ea0;
+    width: 100px;
+    text-align: center;
+    line-height: 35px;
+}
+.title_more {
+    padding-right: 10px;
+    float: right;
+    width: 40px;
+    background: url(../../kuanglian/static/img/more.png) no-repeat;
+    background-position: 30px 12px;
+}
+.blank15 {
+    clear: both;
+    height: 15px;
+    overflow: hidden;
+    display: block;
+}
+a img, :link img, :visited img {
+    border: 0;
+    object-fit: cover;
+}
+.on{
+    width: 20px;
+	background: #e63e28;
+  }
+  .relevant_title {
+    height: 30px;
+    margin-bottom: 15px;
+    color: #313131;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: #4d4d4d solid 1px;
+}
+.relevant_title span {
+    padding: 3px 10px;
+    border-bottom: #de1f1a solid 2px;
+}
+.relevant_cotent {
+    width: 494px;
+    margin-left: 15px;
+    padding: 5px 0;
+}
+.relevant_cotent h1 {
+    color: #343434;
+    font-size: 18px;
+}
+.relevant_cotent span {
+    color: #b9b9b9;
+}
+.lineHeight180 {
+    line-height: 180%;
+}
+.relevant_cotent .detailed {
+    color: #c83734;
+}
+.main_content .attribute1px {
+    border-bottom: #d4d4d6 solid 1px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.footer {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background: #22498a;
+    position: relative;
+
+}
+.footTop {
+    font: 12px/160% arial,\5b8b\4f53 sans-serif;
+    padding: 0;
+    color: #2b2b2b;
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    background: url(../static/img/footerbg.png) no-repeat top center;
+    background-size: 893px 439px;
+}
+.link{
+    position: absolute;
+    font: 12px/160% arial,\5b8b\4f53 sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #2b2b2b;
+
+    display: block;
+}
+.link ul{
+    list-style: none;
+    float: left;
+    margin: 15px 5px 0 15px;
+}
+
+.link ul li:first-child {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+.link ul li a {
+    text-decoration: none;
+    color: #e2edff;
+}
+.footbot {
+    width: 100%;
+    height: 250px;
+    background: url(../static/img/footerbg.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top:50px;
+}
+.foottab {
+    width: 100%;
+    height: 52px;
+    background: rgba(98,150,233,0.2);
+}
+.foottab .tab {
+    width: 1100px;
+    line-height: 52px;
+    margin: 0 auto;
+    text-align: center;
+}
+.foottab .tab span {
+    color: #4d7ac0;
+    font-size: 16px;
+    margin: 0 48px;
+    font-weight: bold;
+}
+.footbs {
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.footbs p:nth-of-type(6) {
+    margin-top: 10px;
+}
+
+.footbs {
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.footbs p:nth-of-type(1) {
+    margin-top: 50px;
+}
+.footbs p {
+    color: #4d7ac0;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    opacity: 1;
+}
+.warp{
+    position: fixed;
+    z-index: 999;
+    left: 80%;
+    bottom: 580px;
+}
+.commonList_dot-qw li {
+    line-height: 33px;
+    background: url(../../kuanglian/static/img/ico_dot.gif) left no-repeat;
+    padding-left: 19px;
+    background-position: 1px 15px;
+    display: flow-root;
+}
+.commonList_dot-qw li a {
+    font-size: 16px;
+}
+.commonList_dot-qw li a:hover {
+    color: #58a5fe;
+}
+#zoom{
+    // height: 4400px;
+    overflow:hidden;
+}
