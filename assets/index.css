@@ -453,6 +453,26 @@ a:-webkit-any-link {
     border-top: #999 solid 2px;
 }
 
+.showcase-full {
+    width: 1100px !important;
+}
+
+.showcase-full .left {
+    width: 170px !important;
+    margin-left: 12px !important;
+    margin-top: 10px !important;
+}
+
+.showcase-full .xmal_pic img {
+    width: 170px !important;
+    height: 100px !important;
+}
+
+.showcase-full .xmal_pic .pic_title {
+    width: 170px !important;
+}
+
+
 .title {
     border-bottom: 1px solid #dee2e6;
     height: 35px;
@@ -1496,4 +1516,58 @@ a:-webkit-any-link {
 .playlist-scroll::-webkit-scrollbar-thumb {
     background: #333;
     border-radius: 10px;
+}
+
+/* 企业展示全宽样式 */
+.showcase-full {
+    width: 1100px !important;
+    border-top: #999 solid 2px;
+    margin-bottom: 20px;
+}
+
+.showcase-full .lb {
+    display: none !important;
+    /* 默认隐藏所有分组 */
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: auto !important;
+    padding-left: 0 !important;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.showcase-full .lb.bl {
+    display: flex !important;
+    /* 仅显示带有 bl 类的分组 */
+    opacity: 1;
+}
+
+.showcase-full .left {
+    width: 170px !important;
+    margin-left: 12px !important;
+    margin-right: 0 !important;
+    margin-top: 10px !important;
+    float: left;
+}
+
+/* 每行第一个去掉左边距，确保完美对齐 */
+.showcase-full .left:nth-child(6n+1) {
+    margin-left: 0 !important;
+}
+
+.showcase-full .xmal_pic img {
+    width: 170px !important;
+    height: 100px !important;
+}
+
+.showcase-full .xmal_pic .pic_title {
+    width: 170px !important;
+    text-align: center;
+    margin-top: 5px !important;
+}
+
+/* 如果有 bl 类，确保它不会干扰 flex 布局 */
+.showcase-full .bl {
+    display: flex !important;
 }
