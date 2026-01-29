@@ -2424,15 +2424,20 @@ body {
 .links-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 15px;
 }
 
 .links-list a {
-    padding: 8px 15px;
+    display: inline-flex;
+    width: auto;
+    padding: 6px 12px;
     background: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 4px;
     color: #333;
+    white-space: nowrap;
 }
 
 .links-list a:hover {
