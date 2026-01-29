@@ -1,685 +1,1365 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
 <head>
     <base href="../../../../../">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会员名录详情</title>
-    <link rel="stylesheet" href="/Public/kuangye/about.css">
-    <link rel="stylesheet" href="/Public/kuangye/css/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.6/lib/theme-chalk/index.css">
-
-    <link rel="stylesheet" href="/Public/kuanglian/index/indexDeatils.css">
-    <script src="assets/jquery.js"></script>
-    <script type="text/javascript" src="/Public/kuanglian/index/jquery.SuperSlide.2.1.3.js"></script>
-
-</head>
-
-<body>
-
-    <!-- 迷你导航 -->
-    <style type="text/css" media="screen">
-            .nav{
-                font-size:18px;
-                display:flex !important;
-                justify-content: space-around !important;
-            }
-
-        </style><!-- 迷你导航 -->
-
-          <script >
-
- function dulu(){
-
-    alert('敬请期待');
- }
-
-
-          </script>
-
-
-        <div class="miniNav">
-            <div class="mianBox">
-                <div class="miniNav-left"></div>
-                <div class="miniNav-right" >
-                    <div ><a href="javascript:translate.changeLanguage('zh');" id="StranLink" title="點擊以繁體中文方式瀏覽">简体版</a></div>
-                    <div ><a href="javascript:translate.changeLanguage('en');">English</a></div>
-                    <div ><a>设为首页</a></div>
-                    <div ><a href="index/index/dl">会员登录</a></div>
-                                        <!-- <div><a href="http://dk.gxnnxykj.com/data/广西海外矿业产业联合会申请入会登记表2022.3.docx">下载会员表</a></div> -->
-                </div>
-                <div class="clearBoth"></div>
-            </div>
-        </div>
-        <!-- 头部搜索 -->
-        <div class="nav_toolbar">
-            <div class="mainBox" style="position: relative;">
-                <div class="left">
-                    <img src="assets/2024-02-19/65d2b62f23d52.png" style="margin-top: 25px; width:755px;height: 101px;"  />
-                </div>
-
-             <!--     <div class="left" style="font-size: 35px;padding-top: 50px;color:black;">
-                   <img src="/Public/kuanglian/index/images/123.png" width="450" alt="">
-                </div> -->
-
-                <div class="right" style="width:320px;">
-                    <div class="search" style="margin-top: 25px;">
-                        <form action="index/index/searchList" id="searchform" name="searchform"  >
-                            <input type="text" id="q" value="请输入关键字" name="kwd" class="search_input" onfocus="javascript:if(this.value=='请输入关键字')this.value='';">
-                            <!-- <input type="submit" class="search_btn" value="" id="btn" onclick="t1()"> -->
-                            <input type="submit" class="search_btn" value="" id="btn" >
-                            <input type="hidden" value="290" name="t_id">
-                            <input type="hidden" value="15" name="pageSize">
-                            <input type="hidden"  value="1" name="qIndex">
-                            <input type="hidden"  value="CMSydylgw" id="siteId">
-                        </form>
-                    </div>
-                    <script type="text/javascript">
-
-                    function t1 () {
-                        console.log(111)
-                         window.location.href = "index/index/articalList/id/8"
-                            console.log(222)
-                         return
-                    }
-
-                    </script>
-                    <div class="linkbar">
-                        <ul>
-                            <li>搜索热词:</li>
-
-                            <!--    -->
-                            <li>
-                                <a href="javascript:void(0);">海外矿业</a>
-                            </li>
-                            <!-- <li>
-                                <a href="javascript:void(0);">亚投行</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">丝路基金</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">经济走廊</a>
-                            </li> -->
-                            <div class="clearBoth"></div>
-                        </ul>
-                        <div class="clearBoth"></div>
-                    </div>
-                </div>
-                <div class="clearBoth"></div>
-                <div class="txtScroll-top2 content"></div>
-            </div>
-        </div>
-        <!-- 主导航 -->
-        <div class="nav">
-            <ul class="menu">
-                <li id="n1" class="nav_li" style="display: list-item;">
-                    <a href="index/index/index">网站首页</a>
-                </li>
-                <li id="n2" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/1">分支机构</a> -->
-                                    <a href="index/index/articalList/id/8">分支机构</a>                                                                                                                                                                                                                        <!-- <a href="javascript:;">分支机构--1</a> -->
-                        <!-- <a href="javascript:;">分支机构</a> -->
-
-
-                        <ul>
-                            <li>
-                                    <a href="index/index/articalList/id/8">锰镍专家委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/9">铝煤专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/35">有色金属专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/34">贵金属专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/36">非金属专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/37">地质装备专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/38">地质技术专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/39">贸易咨询专业委员会</a>
-                                </li>                            
-                                                                                </ul>
-                    </li><li id="n3" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/2">会员管理</a> -->
-                                                                        <a href="index/index/hyfw">会员管理</a>                                                                                                                                                                                    <!-- <a href="javascript:;">会员管理--2</a> -->
-                        <!-- <a href="javascript:;">会员管理</a> -->
-
-
-                        <ul>
-                                                        <li>
-                                    <a href="index/index/hyfw">会员服务</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/dl">会员登录</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/reg">会员申请</a>
-                                </li>
-                                                                                </ul>
-                    </li><li id="n4" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/3">行业新闻</a> -->
-                                                                                                            <a href="index/index/articalList/id/14">行业新闻</a>                                                                                                                                                <!-- <a href="javascript:;">行业新闻--3</a> -->
-                        <!-- <a href="javascript:;">行业新闻</a> -->
-
-
-                        <ul>
-                            <li>
-                                    <a href="index/index/articalList/id/14">会员动态</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/15">国内矿业</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/16">海外矿业</a>
-                                </li>                            
-                                                                                </ul>
-                    </li><li id="n5" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/6">项目推介</a> -->
-                                                                                                                                                <a href="index/index/home">项目推介</a>                                                                                                            <!-- <a href="javascript:;">项目推介--6</a> -->
-                        <!-- <a href="javascript:;">项目推介</a> -->
-
-
-                        <ul>
-                                                        
-                                                        <li>
-                                    <a href="index/index/home">矿业项目</a>
-                                </li>                        </ul>
-                    </li><li id="n6" class="nav_li" style="display: list-item;">
-                        <a href="index/index/jianjie">关于矿联</a>
-                        
-                        <!-- <a href="javascript:;">关于矿联</a> -->
-
-
-                        <ul>
-                                                        
-                            <li>
-                                    <a href="index/index/jianjie">矿联简介</a>
-                                </li>
-
-                                 <li>
-                                    <a href="index/index/zhangcheng">矿联章程</a>
-                                </li>
-                                 <li>
-                                    <a href="index/index/zuzhijiegou">组织结构</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/lindao">主要领导</a>
-                                </li>
-                                 <li>
-                                    <a href="index/index/hyml">会员名录</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/lxfs">联系方式</a>
-                                </li>                                                    </ul>
-                    </li><li id="n7" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/32">政策法规</a> -->
-                                                                                                                                                                                    <a href="index/index/articalList/id/32">政策法规</a>                                                                        <!-- <a href="javascript:;">政策法规--32</a> -->
-                        <!-- <a href="javascript:;">政策法规</a> -->
-
-
-                        <ul>
-                                                        
-                                                                                </ul>
-                    </li><li id="n8" class="nav_li" style="display: list-item;">
-                                                                                    <a href="index/index/articalList/id/27">党建学习</a>
-                                
-                        <!-- <a href="javascript:;">党建学习</a> -->
-
-
-                        <ul>
-                                                        
-                                                                                </ul>
-                    </li>
-            </ul>
-        </div>
-
-    <div id="app" style="margin-top: 20px;">
-        <div class="mian" style="background: white;">
-            <!-- 标题 -->
-           <!--  <div class="mian_title">
-                            </div> -->
-            <!-- 主体 -->
-            <div class="mian_bd">
-                <div class="mian_bd_left">
-                    <!-- 项目名称 -->
-                    <div class="mian_bd_left_top">
-                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
-
-                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
-                                          关于矿联
-                                    </div>
-                                    <div class="li_right" style=" background-color:#EEEEEE">
-
-                                    </div>
-
-
-                        </div>
-                        <div class="mian_bd_left_top_bd">
-
-                            <ul>
-                            <a href="index/index/jianjie" style="text-decoration:none">
-                                <li style=" background-color:#EEEEEE">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联简介
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-</a>
-
-
-
-
-
-  <a href="index/index/zhangcheng" style="text-decoration:none">
-                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
-                                    <div class="li_left" style=" font-size:14px">
-                                     &nbsp   <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联章程
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-<a href="index/index/zuzhijiegou" style="text-decoration:none">
-                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
-                                    <div class="li_left" style=" font-size:14px">
-                                       &nbsp <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 组织结构
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-<a href="index/index/lindao" style="text-decoration:none">
-                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 主要领导
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-                                <a href="index/index/hyml" style="text-decoration:none">
-
-                                 <li style=" background-color:#EEEEEE">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 会员名录
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-                                 <a href="index/index/lxfs" style="text-decoration:none">
-
- <li style=" background-color:#EEEEEE">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 联系方式
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-</a>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 项目发布者 -->
-                    <div class="mian_bd_left_top mian_bd_left_bd">
-                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
-
-                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
-                                          热点新闻
-                                    </div>
-                                    <div class="li_right" style=" background-color:#EEEEEE">
-
-                                    </div>
-
-
-                        </div>
-                        <div class="mian_bd_left_top_bd">
-                            <ul>
-
-  
-                            </ul>
-
-                            <div class="mian_bd_left_detail">
-                                <!-- <el-button type="primary">查看企业详情</el-button> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mian_bd_right">
-                    <div class="mian_bd_right_hd" >
-    <div style=" float:left; width:70px; height:30px; line-height:30px; font-size:16px;margin-top: -10px;     font-weight: bold;">名录详情</div>
-  <div style=" float:right; width:260px; height:30px; line-height:30px; font-size:14px;margin-top: -10px;">当前位置：首页 >> 关于矿联 >> 名录详情</div>
-
-
-                    </div>
- <style>
-
-                .qiye1{
-                    width:265px; height:185px; float: left;
-                    background: #f7f7f7;
-
-                    margin-left:10px;
-                    margin-top:10px;
-
-                }
-
-                .qiye2{
-                    width:265px; height:130px;
-
-                }
-                .qiye3{
-                    width:265px; height:50px;
-                    color:black;
-                    line-height:50px;
-                    text-align:center;
-
-                }
-                table{
-
-                    width:100%;
-
-
-                }
-            </style>
-
-                    <div class="mian_bd_right_bd">
-
-
-                 <p style="text-align:center"><span style=";font-family:&#39;Times New Roman&#39;;font-size:24px"><span style="font-family:微软雅黑">南方锰业集团有限责任公司</span></span></p><p style="text-align:center"><span style=";font-family:&#39;Times New Roman&#39;;font-size:24px">Introduction to South Manganese Group</span><span style=";font-family:微软雅黑;font-size:24px">&nbsp;<span style="font-family:Times New Roman">Limited</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">南方锰业集团有限责任公司</span>(<span style="font-family:仿宋_GB2312">香港联交所股票简称</span><span style="font-family:Times New Roman">:</span><span style="font-family:仿宋_GB2312">南方锰业，股票代码</span><span style="font-family:Times New Roman">:HK1091)</span><span style="font-family:仿宋_GB2312">是集采、选、冶于一体的锰系产品生产与研发大型跨国企业集团，总资产</span><span style="font-family:Times New Roman">100</span><span style="font-family:仿宋_GB2312">亿元，员工</span><span style="font-family:Times New Roman">7200</span><span style="font-family:仿宋_GB2312">人，</span><span style="font-family:Times New Roman">2010</span><span style="font-family:仿宋_GB2312">年在香港联交所主板上市，全国首家在香港上市的资源型锰业企业，在国际国内锰行业具有重要的影响力。</span><span style="font-family:Times New Roman">2022</span><span style="font-family:仿宋_GB2312">年，南方锰业集团连获</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">国家技术创新示范企业、国家知识产权示范企业、国家专精特新</span><span style="font-family:Times New Roman">&#39;</span><span style="font-family:仿宋_GB2312">小巨人</span><span style="font-family:Times New Roman">’</span><span style="font-family:仿宋_GB2312">、全国和谐劳动关系创建示范企业</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">等</span><span style="font-family:Times New Roman">4</span><span style="font-family:仿宋_GB2312">项国家级荣誉。</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese Group </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">Limited</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;(stock abbreviation in Hong Kong Stock Exchange: South Manganese, stock code: HK1091) is a large multinational enterprise group that produces and develops manganese products</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">, integrating mining, selecting and </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">metallurgy, with total assets of 10 billion yuan and 7200 employees. It was listed on the main board of Hong Kong Stock Exchange in 2010, and is the first resource based manganese enterprise listed in Hong Kong in China </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">and</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;has important influence in the international and domestic manganese industry. In 2022, South Manganese Group won four national honors, including “National Technological Innovation Demonstration Enterprise, National Intellectual Property Demonstration Enterprise, National Specialized and Innovation ‘Little Giant’, and National Harmonious Labor Relations Creation Demonstration Enterprise”.</span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">南方锰业集团锰矿资源丰富，积极实施</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">走出去</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">发展战略，在海外建立了高品质矿产资源基地，产业布局辐射广西、贵州、加蓬等地。经过多年发展在全国乃至全球构成了四大鲜明特色和品牌</span><span style="font-family:Times New Roman">:</span><span style="font-family:仿宋_GB2312">一是锰矿资源丰富。在国内外拥有的已探明锰矿资源储量位居全国前列，锰矿开采能力位居亚洲前列，其中采矿量</span><span style="font-family:Times New Roman">350</span><span style="font-family:仿宋_GB2312">万吨</span><span style="font-family:Times New Roman">/</span><span style="font-family:仿宋_GB2312">年，位居亚洲第一。二是打造了全球领先的锰产业链和锰系产品线。核心产品主要有</span><span style="font-family:Times New Roman">:</span><span style="font-family:仿宋_GB2312">电解金属锰、电解二氧化锰、硫酸锰、高纯硫酸锰、锰酸锂、镍钴锰酸锂三元材料、硅锰合金、锰桃、放电锰粉等。三是产品规模居行业领先。电解金属锰产能</span><span style="font-family:Times New Roman">23</span><span style="font-family:仿宋_GB2312">万吨，位居中国第二</span><span style="font-family:Times New Roman">;</span><span style="font-family:仿宋_GB2312">电解二氧化锰产能</span><span style="font-family:Times New Roman">16.5</span><span style="font-family:仿宋_GB2312">万吨，位居中国第一</span><span style="font-family:Times New Roman">;</span><span style="font-family:仿宋_GB2312">锰酸锂产能</span><span style="font-family:Times New Roman">2</span><span style="font-family:仿宋_GB2312">万吨，中国领先</span><span style="font-family:Times New Roman">;</span><span style="font-family:仿宋_GB2312">硅锰合金产能</span><span style="font-family:Times New Roman">24</span><span style="font-family:仿宋_GB2312">万吨，南方领先。四是打造了领军行业的一流锰业技术和人才团队。打造了以全国劳模陈奇志等</span><span style="font-family:Times New Roman">3</span><span style="font-family:仿宋_GB2312">位享受国务院特殊津贴专家为代表的锰行业领军人才队伍。</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">The South Manganese Group is rich in manganese resources. </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">It a</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">ctively implement</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;the “go global” development strategy, establish overseas high-quality mineral resource bases, and deploy industries in</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Guangxi, Guizhou, Gabon and other places. After years of development, the Group has formed four distinctive characteristics and brands in China and even around the world: Firstly, it is rich in manganese resources. The proven reserves of manganese ore resources at home and abroad rank first in China, with the mining volume of 3.5 million tons per year, ranking first in Asia. Secondly, it has built a world leading manganese industry chain and manganese product line. The core products mainly include electrolytic manganese metal, electrolytic manganese dioxide, manganese sulfate, high-purity manganese sulfate, mangan</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">a</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">te, nickel cobalt lithium manganate ternary materials, silicon manganese alloy, manganese peach, discharge manganese powder, etc. Thirdly, the product scale is leading in the industry. The capacity of electrolytic manganese metal is 230,000 tons, ranking second in China; </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">t</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">he capacity of electrolytic manganese dioxide is 165,000 tons, ranking first in China; </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">t</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">he production capacity of lithium manganate is 20,000 tons, leading in China; The capacity of silicon manganese alloy is 240,000 tons, leading in the south. Fourthly, it has built a first-class technology and talent team of the manganese industry which has created a leading talent team in the manganese industry represented by three experts who enjoy the special allowance of the State Council, including the national model worker Chen Qizhi.</span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">根据</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">十四五</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">发展规划，南方锰业集团制定了重点发展</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">矿山和传统产品、新能源材料、合金材料、供应链物流、固废资源化综合利用</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">五大业务板块的布局。集团将强力打造国家级绿色矿山，扎实推进产品纵向一体化战略，助推中国锰产业实现绿色高质量发展，发展成为全球最具核心竞争力的全产业链锰业集团</span><span style="font-family:Times New Roman">!</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">According to the 14th Five-Year Plan, South Manganese Group focuses on the development of five business sectors: mining and traditional products, new energy materials, alloy materials, supply chain logistics and comprehensive utilization of solid waste resources. The Group will build a national-level green mine, promote the vertical integration strategy of products, support the green and high-quality development of China’s manganese industry, and develop into the world’s most competitive manganese industry group with the entire industry chain.</span></p><p style="text-indent:40px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:20px">&nbsp;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">联系信息：</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">地址：广西南宁市朱槿路</span>18<span style="font-family:仿宋_GB2312">号南方锰业大厦</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">电话：</span>0771-5556555 &nbsp;<span style="font-family:仿宋_GB2312">传真：</span><span style="font-family:Times New Roman">0771-5556558</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">邮编：</span>530029</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">网址：</span>http://mn.southmn.com</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">电子邮箱：</span></span><a href="mailto:bgs@southmn.com"><span style="text-decoration:underline;"><span style="font-family: &#39;Times New Roman&#39;;color: rgb(0, 0, 255)">bgs@southmn.com</span></span></a></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Contact information:</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Address: Nanfang Manganese Building, No.18 Zhu</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">j</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">in Road, Nanning, Guangxi.</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Tel: 0771-5556555 Fax: 0771-5556558</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Postal code: 530029</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Website: http://mn.southmn.com</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">E-mail:</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">bgs@southmn.com</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p style=";text-align:justify;text-justify:inter-ideograph;line-height:29px"><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046755902573.png"/></p><p style="text-indent:112px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业集团董事长、总经理李维健</span></span></p><p style="text-indent:14px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Li Weijian, Chairman and General Manager of South Manganese Group </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">Limited</span></span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756004497.png"/></p><p style="text-indent:196px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">公司旗下的大新锰矿采区全景</span></span></p><p style="text-align:center"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Full view of Daxin manganese mine of the company</span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756255322.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:宋体">锰矿开采</span> &nbsp;&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Manganese mining</span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756434387.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业电解金属锰生产车间</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Electrolytic metal manganese production workshop of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">Group</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman"><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756678190.png"/></span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业硅锰合金生产现场</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Production of silicon-manganese alloy of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Group</span></span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756788320.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业锰酸锂生产车间</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Lithium manganate production workshop of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Group</span></span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756882301.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业电解二氧化锰生产车间</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Electrolytic manganese dioxide production workshop </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Group</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p><br/></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer" style=" top:10px">
-  <div class="footTop" >
-    <div class="link">
-      <style type="text/css" media="screen">
-        .nav{
-            font-size:18px;
-        }
-        .menu{
-            width:1100px;
-        }
-        .link2 select {
-          font-size: 14px;
-          margin-right: 10px;
-          width: 165px;
-          height: 30px;
-          padding: 0 10px;
-        }
-        .link2{
-          width:170px; height:48px; float: left;
-        }
-        .banq{
-          width:150px;
-          height:30px;
-          line-height:30px;
-          float:left;
-          color:white;
-          font-size:14px;
-
-        }
-      </style>
-      <!-- <script src="assets/jquery.js"></script> -->
-      <script>
-        $(document).ready(function(){
-
-          $('.jump-select').on('change',function() {
-            var url = $(this).val();
-            // alert(url);
-            window.location.href=url;
-          })
-        });
-
-      </script>
-      <div style=" width:100%; height: 48px;  margin-top: 20px;">
-        <div  class="link2" style=" color: white; font-size:18px; line-height: 30px; width:110px">
-          友情链接：
-        </div>
-        <div  class="link2">
-            <select name="select" class="jump-select" id="j1">
-              <option selected="selected">政府机构</option>
-              <option value="https://www.mnr.gov.cn/">中华人民共和国自然资源部</option><option value="https://www.cgs.gov.cn/">中国地质调查局</option><!--               <option value="http://www.gov.cn/guowuyuan/">国务院</option>
-
-              <option value="http://www.mnr.gov.cn/">自然资源部</option>
-
-              <option value="https://www.mee.gov.cn/">生态环境部</option>
-
-              <option value="https://www.mem.gov.cn/">应急管理部</option>
-
-              <option value="http://www.gxzf.gov.cn/index.shtml">广西壮族自治区人民政府</option>
-
-              <option value="https://www.gx.gov.cn/">南宁市人民政府</option>
-              <option value="https://www.fmprc.gov.cn/">外交部</option>
-              <option value="http://www.mofcom.gov.cn/">商务部</option>
-              <option value="https://www.most.gov.cn/index.html">科技部</option>
-              <option value="https://www.ccpit.org/">中国国际贸易促进会</option>
- -->
-            </select>
-        </div>
-
-        <div  class="link2">
-            <select name="select" class="jump-select">
-              <option selected="selected">有关部门</option>
-  <option value="https://www.caexpo.org.cn/">中国—东盟博览会</option><option value="https://dnr.gxzf.gov.cn/">广西壮族自治区自然资源厅</option><option value="https://zrzyj.nanning.gov.cn/">广西南宁市自然资源局</option><option value="http://dkj.gxzf.gov.cn/">广西壮族自治区地质矿产勘查开发局</option><option value="http://dzhj.dnr.gxzf.gov.cn/PortalWebSite">广西壮族自治区地质环境监测站</option><option value="https://zzzx.dnr.gxzf.gov.cn/">广西壮族自治区自然资源生态修复中心</option><option value="https://jyzx.dnr.gxzf.gov.cn/">广西壮族自治区矿产资源储量评审中心（交易中心）</option><option value="http://swt.gxzf.gov.cn">广西壮族自治区商务厅</option><option value="http://gxt.gxzf.gov.cn">广西壮族自治区工业和信息化厅</option><option value="http://wsb.gxzf.gov.cn">广西壮族自治区外事办公室</option><option value="http://kjt.gxzf.gov.cn">广西壮族自治区科学技术厅</option><option value="http://fgw.gxzf.gov.cn">广西壮族自治区发展和改革委员会</option>             <!--  <option value="http://shzz.mzt.gxzf.gov.cn/">广西社会组织信息平台</option>
-
-              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
-
-              <option value="http://mzt.gxzf.gov.cn/">广西民政厅</option>
-
-              <option value="http://sthjt.gxzf.gov.cn/">广西生态环境厅</option>
-
-              <option value="http://yjglt.gxzf.gov.cn/">广西应急管理厅</option>
-
-              <option value="http://gxt.gxzf.gov.cn/">广西经济和信息化厅</option>
-
-              <option value="http://fgw.gxzf.gov.cn/">广西发展和改革委员会</option>
-              <option value="http://wsb.gxzf.gov.cn/">自治区外事办</option>
-              <option value="https://www.ccpitgx.org/">中国贸促会广西分会</option>
-              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
-              <option value="http://kjt.gxzf.gov.cn/">科技厅</option>
-              <option value="http://swt.gxzf.gov.cn/">商务厅</option>
-              <option value="http://dkj.gxzf.gov.cn/">地矿局</option>
- -->
-
-            </select>
-        </div>
-        <div  class="link2">
-            <select name="select" class="jump-select">
-              <option selected="selected">有关协会</option>
-         <option value="https://www.chinania.org.cn">中国有色金属工业协会</option><option value="http://www.chinamining.org.cn">中国矿业联合会</option><option value="http://www.zjmining.org.cn">浙江省矿业联合会</option><option value="http://www.jskx.org/">江苏省矿业协会</option><option value="http://www.ahskysh.cn">安徽省矿业商会</option><option value="http://www.jxklw.cn/index.html">江西省矿业联合会</option><option value="http://hunanmining.com">湖南省矿业协会</option><option value="http://www.hbkylhh.com/">湖北省矿业联合会</option><option value="http://www.gzskyxh.com/">贵州省矿业协会</option><option value="http://www.scskx.com">四川省矿业协会</option><option value="https://www.cqsksxh.com">重庆市矿山协会</option><option value="http://www.ynmining.com">云南省矿业协会</option>
-   <!-- <option value="http://www.gxkyxh.com/">广西矿业协会</option>
-              <option value="http://www.zgss.org.cn/index.html">中国砂石协会</option>
-
-              <option value="http://www.hkga.org/site/">香港地理学会</option>
-
-              <option value="https://www.ctia.net.cn/">中国冶金矿山企业协会</option>
-
-              <option value="https://www.ctia.net.cn/">中国钨业协会</option>
-
-              <option value="http://www.hainanast.org.cn/">海南省地质地理学会</option>
-
-              <option value="http://www.ynmining.com/">云南省矿业协会</option>
-
-              <option value="https://cqdzkyxh.com/">重庆市地质矿业协会</option>
-
-              <option value="http://ccmassociation.cn/">中国化学矿业协会</option>
-
-              <option value="http://www.cnmia.cn/">中国非金属矿工业协会</option>
-
-              <option value="http://www.cngold.org.cn/">中国黄金协会</option>
-
-              <option value="https://www.chinania.org.cn/">中国有色金属工业协会</option>
-
-              <option value="http://www.geosociety.org.cn/">中国地质学会</option>
-
-              <option value="http://www.ahgcc.cn/index.html">安徽省工商业联合会</option>
-
-              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
-
-              <option value="http://www.jskx.org/">江苏省矿业协会</option>
-
-              <option value="http://www.zjmining.org.cn/">浙江省矿业联合会</option>
-
-              <option value="http://www.jxklw.cn/">江西省矿业联合会</option>
-
-              <option value="http://www.hbkylhh.com/">湖北矿业联合会</option>
-
-              <option value="http://www.sdkyxh.com/">山东省矿业协会</option>
-
-              <option value="http://ahskysh.cn/">安徽省矿业商会</option>
-
-              <option value="http://hunanmining.com/">湖南省矿业协会</option>
-              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
-              <option value="http://www.scskx.com/">四川等各省区矿业商协会</option>
-
- -->
-          </select>
-        </div>
-
-        <div  class="link2">
-            <select name="select" class="jump-select" >
-              <option selected="selected">海外机构</option>
-                     <option value="https://ccop.asia/Index">东亚东南亚地学计划协调委员会（CCOP）</option><option value="https://nma.org/"> 矿产品协会 Mineral Products Association</option><option value="https://nma.org/">美国国家矿业协会NationalMining Association</option><option value="https://minerals.org.au/"> 澳大利亚矿产委员会  Minerals Council of Australia</option><option value="https://www.opec.org/opec_web/en/">欧佩克opec</option><option value="https://miningvietnam.com/?lang=en"> 越南矿业  Mining Vietnam</option>              <!-- <option value="http://dmkczywlw.com/">东盟各国能源矿产部</option> -->
-              <!-- <option value="http://www.igeo.cgs.gov.cn/">地质局和知名地学科学机构</option> -->
-              <!-- <option value="http://www.chinamining.org.cn/">国际权威矿业新闻网站</option> -->
-            </select>
-        </div>
-
-        <div  class="link2">
-            <select name="select" class="jump-select">
-              <option selected="selected">矿业企业</option>
-                 <option value="https://www.jlbkjt.com">吉利百矿</option><option value="https://www.camining.net/Kyforum">中国-东盟地学合作中心</option><option value="http://mn.southmn.com/">南方锰业集团有限公司</option><option value="https://www.chinalco.com.cn/">中国铝业股份有限公司广西分公司</option><option value="https://www.gctong.com/index.php?homepage=disidizhidui">广西壮族自治区第四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1977">广西壮族自治区地球物理勘察院</option><option value="www.egrcn.com">广东英格尔地质装备科技股份有限公司</option><option value="www.gxdkjt.cn">广西地矿建设集团有限公司</option><option value="www.bsbkjt.com">吉利百矿集团有限公司</option><option value="http://gxteam3.gxdkj.org.cn/">广西壮族自治区第三地质队</option><option value="https://www.liugong.com/">广西柳工机械股份有限公司</option><option value="https://www.china-tin.com/">广西华锡有色金属股份有限公司</option><option value="http://www.zggxhj.com/">中国黄金集团广西有限公司</option><option value="https://www.glut.edu.cn/">桂林理工大学地球科学学院</option><option value="www.bsgtjt.cn">广西百色工业投资发展集团有限公司</option><option value="www.gxshgk.com">广西森合高新科技股份有限公司</option><option value="www.tuhaogroup.com">广西途昊集团有限公司</option><option value="http://www.xin-manganese.com/Cn/">广西新振锰业集团有限公司</option><option value="http://ddy.gxdkj.org.cn/">广西壮族自治区地质调查院</option><option value="www.rigm.ac.cn">中国有色桂林矿产地质研究院有限公司</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1972">广西地矿华地工贸集团有限责任公司</option><option value="http://www.cnesip.com/Enterprise/Main.aspx?UserId=8668">核工业二三〇研究所</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1961">广西壮族自治区二七二地质队</option><option value="https://www.gxdkcs.gxdkj.org.cn">广西壮族自治区地质矿产测试研究中心</option><option value="http://gxjbtz.cn.gongxuku.com/">广西金璧投资有限公司</option><option value="http://www.gbm.ceec.net.cn/">中能建绿色建材有限公司</option><option value="http://www.ccicgx.com/">中国检验认证集团广西有限公司</option><option value="http://www.gmtgx.com/">扶绥桂民投新材料科技发展有限公司</option><option value="https://guigang06877.11467.com/">贵港市恒丰矿业有限责任公司</option><option value="https://www.gxu.edu.cn/">广西大学资源环境与材料学院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1927">广西壮族自治区二〇四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1954">广西壮族自治区二七〇地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1929">广西壮族自治区二七一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1974">广西壮族自治区二七三地质队</option><option value="https://www.274dzd.gxdkj.org.cn">广西壮族自治区二七四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1978">广西壮族自治区三〇七核地质大队</option><option value="http://gx305.gxdkj.org.cn/">广西壮族自治区三〇五核地质大队</option><option value="www.gx310.gxdkj.org.cn">广西壮族自治区三一〇核地质大队（广西壮族自治区放射性核素检测中心）</option><option value="http://www.gxzrdk.com/">广西中润地质勘查有限公司</option><option value="https://www.glss.gxdkj.org.cn/">桂林山水大酒店有限责任公司</option><option value="http://yjyjy.b2b.chemm.cn/">广西冶金研究院有限公司</option><option value="http://gxhdy.gxdkj.org.cn/">广西壮族自治区海洋地质调查院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1976">广西壮族自治区第一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1956">广西壮族自治区第七地质队</option><option value="http://gxyg.gxdkj.org.cn/">广西壮族自治区遥感中心</option><option value="http://www.gxdzkcy.com/">中国冶金地质总局广西地质勘查院</option><option value="https://www.007swz.com/Company/95206910">广西中冶军创实业集团有限公司</option><option value="www.gxrunxing.cn">广西润兴新材料有限公司</option><option value="https://www.cchjjl.com/">长春黄金设计院工程建设管理有限公司</option><option value="http://gx.ccgc.cn/">中国煤炭地质总局广西煤炭地质局</option>            </select>
-        </div>
-
-        <div style=" width:700px; margin:0 auto 0; ">
-            <ul>
-              <li style="color:#fff;font-weight:bold; font-size:13px">
-                  <a href="#">网站首页</a> &nbsp &nbsp |
-              </li>
-            </ul>
-            <ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">分支机构</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">会员管理</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">行业新闻</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">项目推介</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">关于矿联</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">政策法规</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">党建学习</a>
-                        &nbsp|
-                    </li>
-                </ul>        </div>
-
-
-
-        <div style=" width:100%; margin:0 auto 0;float: left;text-align: center; ">
-          <div class="banq" style=" width:100%;">版权所有：广西海外矿业产业联合会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0771-2706577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：南宁市青秀区建政路1号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：gxhkl@qq.com</div>
-
-          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 30px;">
-            Copyright 2023－2024 All Rights Reserved
-          </div>
-
-          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 10px;">
-            备案序号：桂ICP备2024032759号
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footbot" style=" width: 90%;">
-     <div style="height:200px;top: 150px;display:flex; float:right;margin-top: 40px;">
-                      <div style="float:left;width:160px;">
-                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
-                              <img src="assets/qrcode.jpg" alt="" width="100" height="100">
-                          </div>
-                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
-                              矿联官方微信公众号
-                          </div>
-                      </div>
-                      <!-- <div style="float:left;width:200px;clear: both;">
-                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
-                              <img src="assets/shouji.png" alt="" width="100" height="100">
-                          </div>
-                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
-                              手机网站
-                          </div>
-                      </div> -->
-                  </div>
-    </div>
-</div>
-
-
-
-
-
-    <script src="/Public/kuangye/js/vue.min.js"></script>
-    <script src="/Public/kuangye/js/index.js"></script>
-
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                about_title: "", //详情标题
-
-            },
-            created() {
-                // 读取地址中的url
-                var url = window.location.href;
-                // 读取url中的参数
-
-                console.log(url);
-
-            },
-        })
-
-
-    </script>
-</body>
-
+
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>会员名录详情</title>
+
+    <link rel="stylesheet" href="/Public/kuangye/about.css">
+
+    <link rel="stylesheet" href="/Public/kuangye/css/index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.6/lib/theme-chalk/index.css">
+
+
+
+    <link rel="stylesheet" href="/Public/kuanglian/index/indexDeatils.css">
+
+    <script src="assets/jquery.js"></script>
+
+    <script type="text/javascript" src="/Public/kuanglian/index/jquery.SuperSlide.2.1.3.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- 迷你导航 -->
+
+    <style type="text/css" media="screen">
+
+            .nav{
+
+                font-size:18px;
+
+                display:flex !important;
+
+                justify-content: space-around !important;
+
+            }
+
+
+
+        </style><!-- 迷你导航 -->
+
+
+
+          <script >
+
+
+
+ function dulu(){
+
+
+
+    alert('敬请期待');
+
+ }
+
+
+
+
+
+          </script>
+
+
+
+
+
+        <div class="miniNav">
+
+            <div class="mianBox">
+
+                <div class="miniNav-left"></div>
+
+                <div class="miniNav-right" >
+
+                    <div ><a href="javascript:translate.changeLanguage('zh');" id="StranLink" title="點擊以繁體中文方式瀏覽">简体版</a></div>
+
+                    <div ><a href="javascript:translate.changeLanguage('en');">English</a></div>
+
+                    <div ><a>设为首页</a></div>
+
+                    <div ><a href="index/index/dl">会员登录</a></div>
+
+                                        <!-- <div><a href="http://dk.gxnnxykj.com/data/广西海外矿业产业联合会申请入会登记表2022.3.docx">下载会员表</a></div> -->
+
+                </div>
+
+                <div class="clearBoth"></div>
+
+            </div>
+
+        </div>
+
+        <!-- 头部搜索 -->
+
+        <div class="nav_toolbar">
+
+            <div class="mainBox" style="position: relative;">
+
+                <div class="left">
+
+                    <img src="assets/2024-02-19/65d2b62f23d52.png" style="margin-top: 25px; width:755px;height: 101px;"  />
+
+                </div>
+
+
+
+             <!--     <div class="left" style="font-size: 35px;padding-top: 50px;color:black;">
+
+                   <img src="/Public/kuanglian/index/images/123.png" width="450" alt="">
+
+                </div> -->
+
+
+
+                <div class="right" style="width:320px;">
+
+                    <div class="search" style="margin-top: 25px;">
+
+                        <form action="/index/index/searchList/" id="searchform" name="searchform"  >
+
+                            <input type="text" id="q" value="请输入关键字" name="kwd" class="search_input" onfocus="javascript:if(this.value=='请输入关键字')this.value='';">
+
+                            <!-- <input type="submit" class="search_btn" value="" id="btn" onclick="t1()"> -->
+
+                            <input type="submit" class="search_btn" value="" id="btn" >
+
+                            <input type="hidden" value="290" name="t_id">
+
+                            <input type="hidden" value="15" name="pageSize">
+
+                            <input type="hidden"  value="1" name="qIndex">
+
+                            <input type="hidden"  value="CMSydylgw" id="siteId">
+
+                        </form>
+
+                    </div>
+
+                    <script type="text/javascript">
+
+
+
+                    function t1 () {
+
+                        console.log(111)
+
+                         window.location.href = "index/index/articalList/id/8"
+
+                            console.log(222)
+
+                         return
+
+                    }
+
+
+
+                    </script>
+
+                    <div class="linkbar">
+
+                        <ul>
+
+                            <li>搜索热词:</li>
+
+
+
+                            <!--    -->
+
+                            <li>
+
+                                <a href="javascript:void(0);">海外矿业</a>
+
+                            </li>
+
+                            <!-- <li>
+
+                                <a href="javascript:void(0);">亚投行</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="javascript:void(0);">丝路基金</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="javascript:void(0);">经济走廊</a>
+
+                            </li> -->
+
+                            <div class="clearBoth"></div>
+
+                        </ul>
+
+                        <div class="clearBoth"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="clearBoth"></div>
+
+                <div class="txtScroll-top2 content"></div>
+
+            </div>
+
+        </div>
+
+        <!-- 主导航 -->
+
+        <div class="nav">
+
+            <ul class="menu">
+
+                <li id="n1" class="nav_li" style="display: list-item;">
+
+                    <a href="index/index/index">网站首页</a>
+
+                </li>
+
+                <li id="n2" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/1">分支机构</a> -->
+
+                                    <a href="index/index/articalList/id/8">分支机构</a>                                                                                                                                                                                                                        <!-- <a href="javascript:;">分支机构--1</a> -->
+
+                        <!-- <a href="javascript:;">分支机构</a> -->
+
+
+
+
+
+                        <ul>
+
+                            <li>
+
+                                    <a href="index/index/articalList/id/8">锰镍专家委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/9">铝煤专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/35">有色金属专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/34">贵金属专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/36">非金属专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/37">地质装备专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/38">地质技术专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/39">贸易咨询专业委员会</a>
+
+                                </li>                            
+
+                                                                                </ul>
+
+                    </li><li id="n3" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/2">会员管理</a> -->
+
+                                                                        <a href="index/index/hyfw">会员管理</a>                                                                                                                                                                                    <!-- <a href="javascript:;">会员管理--2</a> -->
+
+                        <!-- <a href="javascript:;">会员管理</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        <li>
+
+                                    <a href="index/index/hyfw">会员服务</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/dl">会员登录</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/reg">会员申请</a>
+
+                                </li>
+
+                                                                                </ul>
+
+                    </li><li id="n4" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/3">行业新闻</a> -->
+
+                                                                                                            <a href="index/index/articalList/id/14">行业新闻</a>                                                                                                                                                <!-- <a href="javascript:;">行业新闻--3</a> -->
+
+                        <!-- <a href="javascript:;">行业新闻</a> -->
+
+
+
+
+
+                        <ul>
+
+                            <li>
+
+                                    <a href="index/index/articalList/id/14">会员动态</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/15">国内矿业</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/16">海外矿业</a>
+
+                                </li>                            
+
+                                                                                </ul>
+
+                    </li><li id="n5" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/6">项目推介</a> -->
+
+                                                                                                                                                <a href="index/index/home">项目推介</a>                                                                                                            <!-- <a href="javascript:;">项目推介--6</a> -->
+
+                        <!-- <a href="javascript:;">项目推介</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                                                        <li>
+
+                                    <a href="index/index/home">矿业项目</a>
+
+                                </li>                        </ul>
+
+                    </li><li id="n6" class="nav_li" style="display: list-item;">
+
+                        <a href="index/index/jianjie">关于矿联</a>
+
+                        
+
+                        <!-- <a href="javascript:;">关于矿联</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                            <li>
+
+                                    <a href="index/index/jianjie">矿联简介</a>
+
+                                </li>
+
+
+
+                                 <li>
+
+                                    <a href="index/index/zhangcheng">矿联章程</a>
+
+                                </li>
+
+                                 <li>
+
+                                    <a href="index/index/zuzhijiegou">组织结构</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/lindao">主要领导</a>
+
+                                </li>
+
+                                 <li>
+
+                                    <a href="index/index/hyml">会员名录</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/lxfs">联系方式</a>
+
+                                </li>                                                    </ul>
+
+                    </li><li id="n7" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/32">政策法规</a> -->
+
+                                                                                                                                                                                    <a href="index/index/articalList/id/32">政策法规</a>                                                                        <!-- <a href="javascript:;">政策法规--32</a> -->
+
+                        <!-- <a href="javascript:;">政策法规</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                                                                                </ul>
+
+                    </li><li id="n8" class="nav_li" style="display: list-item;">
+
+                                                                                    <a href="index/index/articalList/id/27">党建学习</a>
+
+                                
+
+                        <!-- <a href="javascript:;">党建学习</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                                                                                </ul>
+
+                    </li>
+
+            </ul>
+
+        </div>
+
+
+
+    <div id="app" style="margin-top: 20px;">
+
+        <div class="mian" style="background: white;">
+
+            <!-- 标题 -->
+
+           <!--  <div class="mian_title">
+
+                            </div> -->
+
+            <!-- 主体 -->
+
+            <div class="mian_bd">
+
+                <div class="mian_bd_left">
+
+                    <!-- 项目名称 -->
+
+                    <div class="mian_bd_left_top">
+
+                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
+
+
+
+                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
+
+                                          关于矿联
+
+                                    </div>
+
+                                    <div class="li_right" style=" background-color:#EEEEEE">
+
+
+
+                                    </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="mian_bd_left_top_bd">
+
+
+
+                            <ul>
+
+                            <a href="index/index/jianjie" style="text-decoration:none">
+
+                                <li style=" background-color:#EEEEEE">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联简介
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+</a>
+
+
+
+
+
+
+
+
+
+
+
+  <a href="index/index/zhangcheng" style="text-decoration:none">
+
+                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                     &nbsp   <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联章程
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+<a href="index/index/zuzhijiegou" style="text-decoration:none">
+
+                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                       &nbsp <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 组织结构
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+<a href="index/index/lindao" style="text-decoration:none">
+
+                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 主要领导
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+                                <a href="index/index/hyml" style="text-decoration:none">
+
+
+
+                                 <li style=" background-color:#EEEEEE">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 会员名录
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+                                 <a href="index/index/lxfs" style="text-decoration:none">
+
+
+
+ <li style=" background-color:#EEEEEE">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 联系方式
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+</a>
+
+
+
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 项目发布者 -->
+
+                    <div class="mian_bd_left_top mian_bd_left_bd">
+
+                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
+
+
+
+                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
+
+                                          热点新闻
+
+                                    </div>
+
+                                    <div class="li_right" style=" background-color:#EEEEEE">
+
+
+
+                                    </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="mian_bd_left_top_bd">
+
+                            <ul>
+
+
+
+  
+
+                            </ul>
+
+
+
+                            <div class="mian_bd_left_detail">
+
+                                <!-- <el-button type="primary">查看企业详情</el-button> -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mian_bd_right">
+
+                    <div class="mian_bd_right_hd" >
+
+    <div style=" float:left; width:70px; height:30px; line-height:30px; font-size:16px;margin-top: -10px;     font-weight: bold;">名录详情</div>
+
+  <div style=" float:right; width:260px; height:30px; line-height:30px; font-size:14px;margin-top: -10px;">当前位置：首页 >> 关于矿联 >> 名录详情</div>
+
+
+
+
+
+                    </div>
+
+ <style>
+
+
+
+                .qiye1{
+
+                    width:265px; height:185px; float: left;
+
+                    background: #f7f7f7;
+
+
+
+                    margin-left:10px;
+
+                    margin-top:10px;
+
+
+
+                }
+
+
+
+                .qiye2{
+
+                    width:265px; height:130px;
+
+
+
+                }
+
+                .qiye3{
+
+                    width:265px; height:50px;
+
+                    color:black;
+
+                    line-height:50px;
+
+                    text-align:center;
+
+
+
+                }
+
+                table{
+
+
+
+                    width:100%;
+
+
+
+
+
+                }
+
+            </style>
+
+
+
+                    <div class="mian_bd_right_bd">
+
+
+
+
+
+                 <p style="text-align:center"><span style=";font-family:&#39;Times New Roman&#39;;font-size:24px"><span style="font-family:微软雅黑">南方锰业集团有限责任公司</span></span></p><p style="text-align:center"><span style=";font-family:&#39;Times New Roman&#39;;font-size:24px">Introduction to South Manganese Group</span><span style=";font-family:微软雅黑;font-size:24px">&nbsp;<span style="font-family:Times New Roman">Limited</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">南方锰业集团有限责任公司</span>(<span style="font-family:仿宋_GB2312">香港联交所股票简称</span><span style="font-family:Times New Roman">:</span><span style="font-family:仿宋_GB2312">南方锰业，股票代码</span><span style="font-family:Times New Roman">:HK1091)</span><span style="font-family:仿宋_GB2312">是集采、选、冶于一体的锰系产品生产与研发大型跨国企业集团，总资产</span><span style="font-family:Times New Roman">100</span><span style="font-family:仿宋_GB2312">亿元，员工</span><span style="font-family:Times New Roman">7200</span><span style="font-family:仿宋_GB2312">人，</span><span style="font-family:Times New Roman">2010</span><span style="font-family:仿宋_GB2312">年在香港联交所主板上市，全国首家在香港上市的资源型锰业企业，在国际国内锰行业具有重要的影响力。</span><span style="font-family:Times New Roman">2022</span><span style="font-family:仿宋_GB2312">年，南方锰业集团连获</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">国家技术创新示范企业、国家知识产权示范企业、国家专精特新</span><span style="font-family:Times New Roman">&#39;</span><span style="font-family:仿宋_GB2312">小巨人</span><span style="font-family:Times New Roman">’</span><span style="font-family:仿宋_GB2312">、全国和谐劳动关系创建示范企业</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">等</span><span style="font-family:Times New Roman">4</span><span style="font-family:仿宋_GB2312">项国家级荣誉。</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese Group </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">Limited</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;(stock abbreviation in Hong Kong Stock Exchange: South Manganese, stock code: HK1091) is a large multinational enterprise group that produces and develops manganese products</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">, integrating mining, selecting and </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">metallurgy, with total assets of 10 billion yuan and 7200 employees. It was listed on the main board of Hong Kong Stock Exchange in 2010, and is the first resource based manganese enterprise listed in Hong Kong in China </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">and</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;has important influence in the international and domestic manganese industry. In 2022, South Manganese Group won four national honors, including “National Technological Innovation Demonstration Enterprise, National Intellectual Property Demonstration Enterprise, National Specialized and Innovation ‘Little Giant’, and National Harmonious Labor Relations Creation Demonstration Enterprise”.</span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">南方锰业集团锰矿资源丰富，积极实施</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">走出去</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">发展战略，在海外建立了高品质矿产资源基地，产业布局辐射广西、贵州、加蓬等地。经过多年发展在全国乃至全球构成了四大鲜明特色和品牌</span><span style="font-family:Times New Roman">:</span><span style="font-family:仿宋_GB2312">一是锰矿资源丰富。在国内外拥有的已探明锰矿资源储量位居全国前列，锰矿开采能力位居亚洲前列，其中采矿量</span><span style="font-family:Times New Roman">350</span><span style="font-family:仿宋_GB2312">万吨</span><span style="font-family:Times New Roman">/</span><span style="font-family:仿宋_GB2312">年，位居亚洲第一。二是打造了全球领先的锰产业链和锰系产品线。核心产品主要有</span><span style="font-family:Times New Roman">:</span><span style="font-family:仿宋_GB2312">电解金属锰、电解二氧化锰、硫酸锰、高纯硫酸锰、锰酸锂、镍钴锰酸锂三元材料、硅锰合金、锰桃、放电锰粉等。三是产品规模居行业领先。电解金属锰产能</span><span style="font-family:Times New Roman">23</span><span style="font-family:仿宋_GB2312">万吨，位居中国第二</span><span style="font-family:Times New Roman">;</span><span style="font-family:仿宋_GB2312">电解二氧化锰产能</span><span style="font-family:Times New Roman">16.5</span><span style="font-family:仿宋_GB2312">万吨，位居中国第一</span><span style="font-family:Times New Roman">;</span><span style="font-family:仿宋_GB2312">锰酸锂产能</span><span style="font-family:Times New Roman">2</span><span style="font-family:仿宋_GB2312">万吨，中国领先</span><span style="font-family:Times New Roman">;</span><span style="font-family:仿宋_GB2312">硅锰合金产能</span><span style="font-family:Times New Roman">24</span><span style="font-family:仿宋_GB2312">万吨，南方领先。四是打造了领军行业的一流锰业技术和人才团队。打造了以全国劳模陈奇志等</span><span style="font-family:Times New Roman">3</span><span style="font-family:仿宋_GB2312">位享受国务院特殊津贴专家为代表的锰行业领军人才队伍。</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">The South Manganese Group is rich in manganese resources. </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">It a</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">ctively implement</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;the “go global” development strategy, establish overseas high-quality mineral resource bases, and deploy industries in</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Guangxi, Guizhou, Gabon and other places. After years of development, the Group has formed four distinctive characteristics and brands in China and even around the world: Firstly, it is rich in manganese resources. The proven reserves of manganese ore resources at home and abroad rank first in China, with the mining volume of 3.5 million tons per year, ranking first in Asia. Secondly, it has built a world leading manganese industry chain and manganese product line. The core products mainly include electrolytic manganese metal, electrolytic manganese dioxide, manganese sulfate, high-purity manganese sulfate, mangan</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">a</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">te, nickel cobalt lithium manganate ternary materials, silicon manganese alloy, manganese peach, discharge manganese powder, etc. Thirdly, the product scale is leading in the industry. The capacity of electrolytic manganese metal is 230,000 tons, ranking second in China; </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">t</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">he capacity of electrolytic manganese dioxide is 165,000 tons, ranking first in China; </span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">t</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">he production capacity of lithium manganate is 20,000 tons, leading in China; The capacity of silicon manganese alloy is 240,000 tons, leading in the south. Fourthly, it has built a first-class technology and talent team of the manganese industry which has created a leading talent team in the manganese industry represented by three experts who enjoy the special allowance of the State Council, including the national model worker Chen Qizhi.</span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">根据</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">十四五</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">发展规划，南方锰业集团制定了重点发展</span><span style="font-family:Times New Roman">“</span><span style="font-family:仿宋_GB2312">矿山和传统产品、新能源材料、合金材料、供应链物流、固废资源化综合利用</span><span style="font-family:Times New Roman">”</span><span style="font-family:仿宋_GB2312">五大业务板块的布局。集团将强力打造国家级绿色矿山，扎实推进产品纵向一体化战略，助推中国锰产业实现绿色高质量发展，发展成为全球最具核心竞争力的全产业链锰业集团</span><span style="font-family:Times New Roman">!</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">According to the 14th Five-Year Plan, South Manganese Group focuses on the development of five business sectors: mining and traditional products, new energy materials, alloy materials, supply chain logistics and comprehensive utilization of solid waste resources. The Group will build a national-level green mine, promote the vertical integration strategy of products, support the green and high-quality development of China’s manganese industry, and develop into the world’s most competitive manganese industry group with the entire industry chain.</span></p><p style="text-indent:40px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:20px">&nbsp;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">联系信息：</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">地址：广西南宁市朱槿路</span>18<span style="font-family:仿宋_GB2312">号南方锰业大厦</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">电话：</span>0771-5556555 &nbsp;<span style="font-family:仿宋_GB2312">传真：</span><span style="font-family:Times New Roman">0771-5556558</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">邮编：</span>530029</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">网址：</span>http://mn.southmn.com</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:仿宋_GB2312">电子邮箱：</span></span><a href="mailto:bgs@southmn.com"><span style="text-decoration:underline;"><span style="font-family: &#39;Times New Roman&#39;;color: rgb(0, 0, 255)">bgs@southmn.com</span></span></a></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Contact information:</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Address: Nanfang Manganese Building, No.18 Zhu</span><span style=";font-family:仿宋_GB2312;font-size:14px"><span style="font-family:Times New Roman">j</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">in Road, Nanning, Guangxi.</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Tel: 0771-5556555 Fax: 0771-5556558</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Postal code: 530029</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Website: http://mn.southmn.com</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">E-mail:</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">bgs@southmn.com</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p style=";text-align:justify;text-justify:inter-ideograph;line-height:29px"><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046755902573.png"/></p><p style="text-indent:112px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业集团董事长、总经理李维健</span></span></p><p style="text-indent:14px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Li Weijian, Chairman and General Manager of South Manganese Group </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">Limited</span></span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756004497.png"/></p><p style="text-indent:196px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">公司旗下的大新锰矿采区全景</span></span></p><p style="text-align:center"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Full view of Daxin manganese mine of the company</span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756255322.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:宋体">锰矿开采</span> &nbsp;&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Manganese mining</span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756434387.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业电解金属锰生产车间</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Electrolytic metal manganese production workshop of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">Group</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman"><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756678190.png"/></span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业硅锰合金生产现场</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Production of silicon-manganese alloy of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Group</span></span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756788320.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业锰酸锂生产车间</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Lithium manganate production workshop of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Group</span></span></p><p><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046756882301.png"/></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px"><span style="font-family:宋体">南方锰业电解二氧化锰生产车间</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Electrolytic manganese dioxide production workshop </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">South Manganese</span><span style=";font-family:仿宋_GB2312;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Group</span></span></p><p><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span></p><p><br/></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer" style=" top:10px">
+
+  <div class="footTop" >
+
+    <div class="link">
+
+      <style type="text/css" media="screen">
+
+        .nav{
+
+            font-size:18px;
+
+        }
+
+        .menu{
+
+            width:1100px;
+
+        }
+
+        .link2 select {
+
+          font-size: 14px;
+
+          margin-right: 10px;
+
+          width: 165px;
+
+          height: 30px;
+
+          padding: 0 10px;
+
+        }
+
+        .link2{
+
+          width:170px; height:48px; float: left;
+
+        }
+
+        .banq{
+
+          width:150px;
+
+          height:30px;
+
+          line-height:30px;
+
+          float:left;
+
+          color:white;
+
+          font-size:14px;
+
+
+
+        }
+
+      </style>
+
+      <!-- <script src="assets/jquery.js"></script> -->
+
+      <script>
+
+        $(document).ready(function(){
+
+
+
+          $('.jump-select').on('change',function() {
+
+            var url = $(this).val();
+
+            // alert(url);
+
+            window.location.href=url;
+
+          })
+
+        });
+
+
+
+      </script>
+
+      <div style=" width:100%; height: 48px;  margin-top: 20px;">
+
+        <div  class="link2" style=" color: white; font-size:18px; line-height: 30px; width:110px">
+
+          友情链接：
+
+        </div>
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select" id="j1">
+
+              <option selected="selected">政府机构</option>
+
+              <option value="https://www.mnr.gov.cn/">中华人民共和国自然资源部</option><option value="https://www.cgs.gov.cn/">中国地质调查局</option><!--               <option value="http://www.gov.cn/guowuyuan/">国务院</option>
+
+
+
+              <option value="http://www.mnr.gov.cn/">自然资源部</option>
+
+
+
+              <option value="https://www.mee.gov.cn/">生态环境部</option>
+
+
+
+              <option value="https://www.mem.gov.cn/">应急管理部</option>
+
+
+
+              <option value="http://www.gxzf.gov.cn/index.shtml">广西壮族自治区人民政府</option>
+
+
+
+              <option value="https://www.gx.gov.cn/">南宁市人民政府</option>
+
+              <option value="https://www.fmprc.gov.cn/">外交部</option>
+
+              <option value="http://www.mofcom.gov.cn/">商务部</option>
+
+              <option value="https://www.most.gov.cn/index.html">科技部</option>
+
+              <option value="https://www.ccpit.org/">中国国际贸易促进会</option>
+
+ -->
+
+            </select>
+
+        </div>
+
+
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select">
+
+              <option selected="selected">有关部门</option>
+
+  <option value="https://www.caexpo.org.cn/">中国—东盟博览会</option><option value="https://dnr.gxzf.gov.cn/">广西壮族自治区自然资源厅</option><option value="https://zrzyj.nanning.gov.cn/">广西南宁市自然资源局</option><option value="http://dkj.gxzf.gov.cn/">广西壮族自治区地质矿产勘查开发局</option><option value="http://dzhj.dnr.gxzf.gov.cn/PortalWebSite">广西壮族自治区地质环境监测站</option><option value="https://zzzx.dnr.gxzf.gov.cn/">广西壮族自治区自然资源生态修复中心</option><option value="https://jyzx.dnr.gxzf.gov.cn/">广西壮族自治区矿产资源储量评审中心（交易中心）</option><option value="http://swt.gxzf.gov.cn">广西壮族自治区商务厅</option><option value="http://gxt.gxzf.gov.cn">广西壮族自治区工业和信息化厅</option><option value="http://wsb.gxzf.gov.cn">广西壮族自治区外事办公室</option><option value="http://kjt.gxzf.gov.cn">广西壮族自治区科学技术厅</option><option value="http://fgw.gxzf.gov.cn">广西壮族自治区发展和改革委员会</option>             <!--  <option value="http://shzz.mzt.gxzf.gov.cn/">广西社会组织信息平台</option>
+
+
+
+              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
+
+
+
+              <option value="http://mzt.gxzf.gov.cn/">广西民政厅</option>
+
+
+
+              <option value="http://sthjt.gxzf.gov.cn/">广西生态环境厅</option>
+
+
+
+              <option value="http://yjglt.gxzf.gov.cn/">广西应急管理厅</option>
+
+
+
+              <option value="http://gxt.gxzf.gov.cn/">广西经济和信息化厅</option>
+
+
+
+              <option value="http://fgw.gxzf.gov.cn/">广西发展和改革委员会</option>
+
+              <option value="http://wsb.gxzf.gov.cn/">自治区外事办</option>
+
+              <option value="https://www.ccpitgx.org/">中国贸促会广西分会</option>
+
+              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
+
+              <option value="http://kjt.gxzf.gov.cn/">科技厅</option>
+
+              <option value="http://swt.gxzf.gov.cn/">商务厅</option>
+
+              <option value="http://dkj.gxzf.gov.cn/">地矿局</option>
+
+ -->
+
+
+
+            </select>
+
+        </div>
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select">
+
+              <option selected="selected">有关协会</option>
+
+         <option value="https://www.chinania.org.cn">中国有色金属工业协会</option><option value="http://www.chinamining.org.cn">中国矿业联合会</option><option value="http://www.zjmining.org.cn">浙江省矿业联合会</option><option value="http://www.jskx.org/">江苏省矿业协会</option><option value="http://www.ahskysh.cn">安徽省矿业商会</option><option value="http://www.jxklw.cn/index.html">江西省矿业联合会</option><option value="http://hunanmining.com">湖南省矿业协会</option><option value="http://www.hbkylhh.com/">湖北省矿业联合会</option><option value="http://www.gzskyxh.com/">贵州省矿业协会</option><option value="http://www.scskx.com">四川省矿业协会</option><option value="https://www.cqsksxh.com">重庆市矿山协会</option><option value="http://www.ynmining.com">云南省矿业协会</option>
+
+   <!-- <option value="http://www.gxkyxh.com/">广西矿业协会</option>
+
+              <option value="http://www.zgss.org.cn/index.html">中国砂石协会</option>
+
+
+
+              <option value="http://www.hkga.org/site/">香港地理学会</option>
+
+
+
+              <option value="https://www.ctia.net.cn/">中国冶金矿山企业协会</option>
+
+
+
+              <option value="https://www.ctia.net.cn/">中国钨业协会</option>
+
+
+
+              <option value="http://www.hainanast.org.cn/">海南省地质地理学会</option>
+
+
+
+              <option value="http://www.ynmining.com/">云南省矿业协会</option>
+
+
+
+              <option value="https://cqdzkyxh.com/">重庆市地质矿业协会</option>
+
+
+
+              <option value="http://ccmassociation.cn/">中国化学矿业协会</option>
+
+
+
+              <option value="http://www.cnmia.cn/">中国非金属矿工业协会</option>
+
+
+
+              <option value="http://www.cngold.org.cn/">中国黄金协会</option>
+
+
+
+              <option value="https://www.chinania.org.cn/">中国有色金属工业协会</option>
+
+
+
+              <option value="http://www.geosociety.org.cn/">中国地质学会</option>
+
+
+
+              <option value="http://www.ahgcc.cn/index.html">安徽省工商业联合会</option>
+
+
+
+              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
+
+
+
+              <option value="http://www.jskx.org/">江苏省矿业协会</option>
+
+
+
+              <option value="http://www.zjmining.org.cn/">浙江省矿业联合会</option>
+
+
+
+              <option value="http://www.jxklw.cn/">江西省矿业联合会</option>
+
+
+
+              <option value="http://www.hbkylhh.com/">湖北矿业联合会</option>
+
+
+
+              <option value="http://www.sdkyxh.com/">山东省矿业协会</option>
+
+
+
+              <option value="http://ahskysh.cn/">安徽省矿业商会</option>
+
+
+
+              <option value="http://hunanmining.com/">湖南省矿业协会</option>
+
+              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
+
+              <option value="http://www.scskx.com/">四川等各省区矿业商协会</option>
+
+
+
+ -->
+
+          </select>
+
+        </div>
+
+
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select" >
+
+              <option selected="selected">海外机构</option>
+
+                     <option value="https://ccop.asia/Index">东亚东南亚地学计划协调委员会（CCOP）</option><option value="https://nma.org/"> 矿产品协会 Mineral Products Association</option><option value="https://nma.org/">美国国家矿业协会NationalMining Association</option><option value="https://minerals.org.au/"> 澳大利亚矿产委员会  Minerals Council of Australia</option><option value="https://www.opec.org/opec_web/en/">欧佩克opec</option><option value="https://miningvietnam.com/?lang=en"> 越南矿业  Mining Vietnam</option>              <!-- <option value="http://dmkczywlw.com/">东盟各国能源矿产部</option> -->
+
+              <!-- <option value="http://www.igeo.cgs.gov.cn/">地质局和知名地学科学机构</option> -->
+
+              <!-- <option value="http://www.chinamining.org.cn/">国际权威矿业新闻网站</option> -->
+
+            </select>
+
+        </div>
+
+
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select">
+
+              <option selected="selected">矿业企业</option>
+
+                 <option value="https://www.jlbkjt.com">吉利百矿</option><option value="https://www.camining.net/Kyforum">中国-东盟地学合作中心</option><option value="http://mn.southmn.com/">南方锰业集团有限公司</option><option value="https://www.chinalco.com.cn/">中国铝业股份有限公司广西分公司</option><option value="https://www.gctong.com/index.php?homepage=disidizhidui">广西壮族自治区第四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1977">广西壮族自治区地球物理勘察院</option><option value="www.egrcn.com">广东英格尔地质装备科技股份有限公司</option><option value="www.gxdkjt.cn">广西地矿建设集团有限公司</option><option value="www.bsbkjt.com">吉利百矿集团有限公司</option><option value="http://gxteam3.gxdkj.org.cn/">广西壮族自治区第三地质队</option><option value="https://www.liugong.com/">广西柳工机械股份有限公司</option><option value="https://www.china-tin.com/">广西华锡有色金属股份有限公司</option><option value="http://www.zggxhj.com/">中国黄金集团广西有限公司</option><option value="https://www.glut.edu.cn/">桂林理工大学地球科学学院</option><option value="www.bsgtjt.cn">广西百色工业投资发展集团有限公司</option><option value="www.gxshgk.com">广西森合高新科技股份有限公司</option><option value="www.tuhaogroup.com">广西途昊集团有限公司</option><option value="http://www.xin-manganese.com/Cn/">广西新振锰业集团有限公司</option><option value="http://ddy.gxdkj.org.cn/">广西壮族自治区地质调查院</option><option value="www.rigm.ac.cn">中国有色桂林矿产地质研究院有限公司</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1972">广西地矿华地工贸集团有限责任公司</option><option value="http://www.cnesip.com/Enterprise/Main.aspx?UserId=8668">核工业二三〇研究所</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1961">广西壮族自治区二七二地质队</option><option value="https://www.gxdkcs.gxdkj.org.cn">广西壮族自治区地质矿产测试研究中心</option><option value="http://gxjbtz.cn.gongxuku.com/">广西金璧投资有限公司</option><option value="http://www.gbm.ceec.net.cn/">中能建绿色建材有限公司</option><option value="http://www.ccicgx.com/">中国检验认证集团广西有限公司</option><option value="http://www.gmtgx.com/">扶绥桂民投新材料科技发展有限公司</option><option value="https://guigang06877.11467.com/">贵港市恒丰矿业有限责任公司</option><option value="https://www.gxu.edu.cn/">广西大学资源环境与材料学院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1927">广西壮族自治区二〇四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1954">广西壮族自治区二七〇地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1929">广西壮族自治区二七一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1974">广西壮族自治区二七三地质队</option><option value="https://www.274dzd.gxdkj.org.cn">广西壮族自治区二七四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1978">广西壮族自治区三〇七核地质大队</option><option value="http://gx305.gxdkj.org.cn/">广西壮族自治区三〇五核地质大队</option><option value="www.gx310.gxdkj.org.cn">广西壮族自治区三一〇核地质大队（广西壮族自治区放射性核素检测中心）</option><option value="http://www.gxzrdk.com/">广西中润地质勘查有限公司</option><option value="https://www.glss.gxdkj.org.cn/">桂林山水大酒店有限责任公司</option><option value="http://yjyjy.b2b.chemm.cn/">广西冶金研究院有限公司</option><option value="http://gxhdy.gxdkj.org.cn/">广西壮族自治区海洋地质调查院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1976">广西壮族自治区第一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1956">广西壮族自治区第七地质队</option><option value="http://gxyg.gxdkj.org.cn/">广西壮族自治区遥感中心</option><option value="http://www.gxdzkcy.com/">中国冶金地质总局广西地质勘查院</option><option value="https://www.007swz.com/Company/95206910">广西中冶军创实业集团有限公司</option><option value="www.gxrunxing.cn">广西润兴新材料有限公司</option><option value="https://www.cchjjl.com/">长春黄金设计院工程建设管理有限公司</option><option value="http://gx.ccgc.cn/">中国煤炭地质总局广西煤炭地质局</option>            </select>
+
+        </div>
+
+
+
+        <div style=" width:700px; margin:0 auto 0; ">
+
+            <ul>
+
+              <li style="color:#fff;font-weight:bold; font-size:13px">
+
+                  <a href="#">网站首页</a> &nbsp &nbsp |
+
+              </li>
+
+            </ul>
+
+            <ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">分支机构</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">会员管理</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">行业新闻</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">项目推介</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">关于矿联</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">政策法规</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">党建学习</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul>        </div>
+
+
+
+
+
+
+
+        <div style=" width:100%; margin:0 auto 0;float: left;text-align: center; ">
+
+          <div class="banq" style=" width:100%;">版权所有：广西海外矿业产业联合会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0771-2706577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：南宁市青秀区建政路1号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：gxhkl@qq.com</div>
+
+
+
+          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 30px;">
+
+            Copyright 2023－2024 All Rights Reserved
+
+          </div>
+
+
+
+          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 10px;">
+
+            备案序号：桂ICP备2024032759号
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footbot" style=" width: 90%;">
+
+     <div style="height:200px;top: 150px;display:flex; float:right;margin-top: 40px;">
+
+                      <div style="float:left;width:160px;">
+
+                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
+
+                              <img src="assets/qrcode.jpg" alt="" width="100" height="100">
+
+                          </div>
+
+                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
+
+                              矿联官方微信公众号
+
+                          </div>
+
+                      </div>
+
+                      <!-- <div style="float:left;width:200px;clear: both;">
+
+                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
+
+                              <img src="assets/shouji.png" alt="" width="100" height="100">
+
+                          </div>
+
+                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
+
+                              手机网站
+
+                          </div>
+
+                      </div> -->
+
+                  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Public/kuangye/js/vue.min.js"></script>
+
+    <script src="/Public/kuangye/js/index.js"></script>
+
+
+
+    <script>
+
+        var app = new Vue({
+
+            el: '#app',
+
+            data: {
+
+                about_title: "", //详情标题
+
+
+
+            },
+
+            created() {
+
+                // 读取地址中的url
+
+                var url = window.location.href;
+
+                // 读取url中的参数
+
+
+
+                console.log(url);
+
+
+
+            },
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
 </html>
 
 

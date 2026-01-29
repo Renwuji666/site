@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索结果</title>
+  <link rel="stylesheet" href="../../../assets/index.css">
+  <style>
+    body {
+      background: #f6f8fb;
+    }
+    .search-page {
+      width: 1100px;
+      margin: 30px auto 60px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      padding: 24px 28px;
+      box-sizing: border-box;
+    }
+    .search-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid #e7e7e7;
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+    .search-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2b4a8b;
+    }
+    .search-form {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .search_input {
+      width: 420px;
+      height: 34px;
+      padding: 0 10px;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .search_btn {
+      width: 70px;
+      height: 34px;
+      border: none;
+      border-radius: 4px;
+      background: #2b4a8b;
+      color: #fff;
+      cursor: pointer;
+    }
+    .search-meta {
+      color: #666;
+      font-size: 13px;
+    }
+    .result-list {
+      margin-top: 16px;
+    }
+    .result-item {
+      padding: 12px 4px;
+      border-bottom: 1px dashed #e0e0e0;
+    }
+    .result-item:last-child {
+      border-bottom: none;
+    }
+    .result-title {
+      font-size: 16px;
+      color: #1a3b7a;
+    }
+    .result-title mark {
+      background: #ffe58f;
+      padding: 0 2px;
+    }
+    .result-date {
+      margin-left: 10px;
+      color: #999;
+      font-size: 12px;
+    }
+    .empty {
+      color: #999;
+      padding: 24px 0;
+      text-align: center;
+    }
+    .back-home {
+      text-decoration: none;
+      color: #2b4a8b;
+    }
+    @media (max-width: 1200px) {
+      .search-page {
+        width: 94%;
+      }
+      .search_input {
+        width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="search-page">
+    <div class="search-header">
+      <div class="search-title">站内搜索结果</div>
+      <form class="search-form" id="searchform" method="get">
+        <input type="text" id="kwd" name="kwd" class="search_input" placeholder="请输入关键字">
+        <button type="submit" class="search_btn">搜索</button>
+      </form>
+    </div>
+    <div class="search-meta" id="meta"></div>
+    <div class="result-list" id="results"></div>
+    <div style="margin-top:16px;">
+      <a class="back-home" href="/index.html">返回首页</a>
+    </div>
+  </div>
+
+  <script>
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, function (ch) {
+        return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];
+      });
+    }
+
+    function highlight(text, keyword) {
+      if (!keyword) return escapeHtml(text);
+      const escaped = escapeHtml(text);
+      const pattern = new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+      return escaped.replace(pattern, function (match) { return '<mark>' + match + '</mark>'; });
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    let keyword = (params.get('kwd') || '').trim();
+    if (keyword === '请输入关键字') {
+      keyword = '';
+    }
+    const keywordLower = keyword.toLowerCase();
+    const input = document.getElementById('kwd');
+    input.value = keyword;
+
+    const meta = document.getElementById('meta');
+    const resultsEl = document.getElementById('results');
+
+    function render(items) {
+      if (!keyword) {
+        meta.textContent = '请输入关键字进行搜索。';
+        resultsEl.innerHTML = '<div class="empty">暂无搜索关键词</div>';
+        return;
+      }
+
+      const matched = items.filter(function (item) {
+        return item.title && item.title.toLowerCase().indexOf(keywordLower) !== -1;
+      });
+
+      meta.textContent = '关键词：' + keyword + '，共 ' + matched.length + ' 条结果';
+
+      if (matched.length === 0) {
+        resultsEl.innerHTML = '<div class="empty">没有找到匹配内容</div>';
+        return;
+      }
+
+      resultsEl.innerHTML = matched.map(function (item) {
+        const titleHtml = highlight(item.title, keyword);
+        const date = item.date ? '<span class="result-date">' + item.date + '</span>' : '';
+        return '<div class="result-item">' +
+          '<a class="result-title" href="' + item.url + '" target="_blank">' + titleHtml + '</a>' +
+          date +
+        '</div>';
+      }).join('');
+    }
+
+    fetch('./search-index.json')
+      .then(function (res) { return res.json(); })
+      .then(function (items) { render(items); })
+      .catch(function () {
+        meta.textContent = '搜索索引加载失败，请稍后再试。';
+        resultsEl.innerHTML = '<div class="empty">索引不可用</div>';
+      });
+  </script>
+</body>
+</html>

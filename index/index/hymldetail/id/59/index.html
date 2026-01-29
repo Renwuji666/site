@@ -1,685 +1,1365 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
 <head>
     <base href="../../../../../">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会员名录详情</title>
-    <link rel="stylesheet" href="/Public/kuangye/about.css">
-    <link rel="stylesheet" href="/Public/kuangye/css/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.6/lib/theme-chalk/index.css">
-
-    <link rel="stylesheet" href="/Public/kuanglian/index/indexDeatils.css">
-    <script src="assets/jquery.js"></script>
-    <script type="text/javascript" src="/Public/kuanglian/index/jquery.SuperSlide.2.1.3.js"></script>
-
-</head>
-
-<body>
-
-    <!-- 迷你导航 -->
-    <style type="text/css" media="screen">
-            .nav{
-                font-size:18px;
-                display:flex !important;
-                justify-content: space-around !important;
-            }
-
-        </style><!-- 迷你导航 -->
-
-          <script >
-
- function dulu(){
-
-    alert('敬请期待');
- }
-
-
-          </script>
-
-
-        <div class="miniNav">
-            <div class="mianBox">
-                <div class="miniNav-left"></div>
-                <div class="miniNav-right" >
-                    <div ><a href="javascript:translate.changeLanguage('zh');" id="StranLink" title="點擊以繁體中文方式瀏覽">简体版</a></div>
-                    <div ><a href="javascript:translate.changeLanguage('en');">English</a></div>
-                    <div ><a>设为首页</a></div>
-                    <div ><a href="index/index/dl">会员登录</a></div>
-                                        <!-- <div><a href="http://dk.gxnnxykj.com/data/广西海外矿业产业联合会申请入会登记表2022.3.docx">下载会员表</a></div> -->
-                </div>
-                <div class="clearBoth"></div>
-            </div>
-        </div>
-        <!-- 头部搜索 -->
-        <div class="nav_toolbar">
-            <div class="mainBox" style="position: relative;">
-                <div class="left">
-                    <img src="assets/2024-02-19/65d2b62f23d52.png" style="margin-top: 25px; width:755px;height: 101px;"  />
-                </div>
-
-             <!--     <div class="left" style="font-size: 35px;padding-top: 50px;color:black;">
-                   <img src="/Public/kuanglian/index/images/123.png" width="450" alt="">
-                </div> -->
-
-                <div class="right" style="width:320px;">
-                    <div class="search" style="margin-top: 25px;">
-                        <form action="index/index/searchList" id="searchform" name="searchform"  >
-                            <input type="text" id="q" value="请输入关键字" name="kwd" class="search_input" onfocus="javascript:if(this.value=='请输入关键字')this.value='';">
-                            <!-- <input type="submit" class="search_btn" value="" id="btn" onclick="t1()"> -->
-                            <input type="submit" class="search_btn" value="" id="btn" >
-                            <input type="hidden" value="290" name="t_id">
-                            <input type="hidden" value="15" name="pageSize">
-                            <input type="hidden"  value="1" name="qIndex">
-                            <input type="hidden"  value="CMSydylgw" id="siteId">
-                        </form>
-                    </div>
-                    <script type="text/javascript">
-
-                    function t1 () {
-                        console.log(111)
-                         window.location.href = "index/index/articalList/id/8"
-                            console.log(222)
-                         return
-                    }
-
-                    </script>
-                    <div class="linkbar">
-                        <ul>
-                            <li>搜索热词:</li>
-
-                            <!--    -->
-                            <li>
-                                <a href="javascript:void(0);">海外矿业</a>
-                            </li>
-                            <!-- <li>
-                                <a href="javascript:void(0);">亚投行</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">丝路基金</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">经济走廊</a>
-                            </li> -->
-                            <div class="clearBoth"></div>
-                        </ul>
-                        <div class="clearBoth"></div>
-                    </div>
-                </div>
-                <div class="clearBoth"></div>
-                <div class="txtScroll-top2 content"></div>
-            </div>
-        </div>
-        <!-- 主导航 -->
-        <div class="nav">
-            <ul class="menu">
-                <li id="n1" class="nav_li" style="display: list-item;">
-                    <a href="index/index/index">网站首页</a>
-                </li>
-                <li id="n2" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/1">分支机构</a> -->
-                                    <a href="index/index/articalList/id/8">分支机构</a>                                                                                                                                                                                                                        <!-- <a href="javascript:;">分支机构--1</a> -->
-                        <!-- <a href="javascript:;">分支机构</a> -->
-
-
-                        <ul>
-                            <li>
-                                    <a href="index/index/articalList/id/8">锰镍专家委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/9">铝煤专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/35">有色金属专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/34">贵金属专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/36">非金属专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/37">地质装备专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/38">地质技术专业委员会</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/39">贸易咨询专业委员会</a>
-                                </li>                            
-                                                                                </ul>
-                    </li><li id="n3" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/2">会员管理</a> -->
-                                                                        <a href="index/index/hyfw">会员管理</a>                                                                                                                                                                                    <!-- <a href="javascript:;">会员管理--2</a> -->
-                        <!-- <a href="javascript:;">会员管理</a> -->
-
-
-                        <ul>
-                                                        <li>
-                                    <a href="index/index/hyfw">会员服务</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/dl">会员登录</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/reg">会员申请</a>
-                                </li>
-                                                                                </ul>
-                    </li><li id="n4" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/3">行业新闻</a> -->
-                                                                                                            <a href="index/index/articalList/id/14">行业新闻</a>                                                                                                                                                <!-- <a href="javascript:;">行业新闻--3</a> -->
-                        <!-- <a href="javascript:;">行业新闻</a> -->
-
-
-                        <ul>
-                            <li>
-                                    <a href="index/index/articalList/id/14">会员动态</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/15">国内矿业</a>
-                                </li><li>
-                                    <a href="index/index/articalList/id/16">海外矿业</a>
-                                </li>                            
-                                                                                </ul>
-                    </li><li id="n5" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/6">项目推介</a> -->
-                                                                                                                                                <a href="index/index/home">项目推介</a>                                                                                                            <!-- <a href="javascript:;">项目推介--6</a> -->
-                        <!-- <a href="javascript:;">项目推介</a> -->
-
-
-                        <ul>
-                                                        
-                                                        <li>
-                                    <a href="index/index/home">矿业项目</a>
-                                </li>                        </ul>
-                    </li><li id="n6" class="nav_li" style="display: list-item;">
-                        <a href="index/index/jianjie">关于矿联</a>
-                        
-                        <!-- <a href="javascript:;">关于矿联</a> -->
-
-
-                        <ul>
-                                                        
-                            <li>
-                                    <a href="index/index/jianjie">矿联简介</a>
-                                </li>
-
-                                 <li>
-                                    <a href="index/index/zhangcheng">矿联章程</a>
-                                </li>
-                                 <li>
-                                    <a href="index/index/zuzhijiegou">组织结构</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/lindao">主要领导</a>
-                                </li>
-                                 <li>
-                                    <a href="index/index/hyml">会员名录</a>
-                                </li>
-                                <li>
-                                    <a href="index/index/lxfs">联系方式</a>
-                                </li>                                                    </ul>
-                    </li><li id="n7" class="nav_li" style="display: list-item;">
-                                                                                                                    <!-- <a href="index/index/articalList/id/32">政策法规</a> -->
-                                                                                                                                                                                    <a href="index/index/articalList/id/32">政策法规</a>                                                                        <!-- <a href="javascript:;">政策法规--32</a> -->
-                        <!-- <a href="javascript:;">政策法规</a> -->
-
-
-                        <ul>
-                                                        
-                                                                                </ul>
-                    </li><li id="n8" class="nav_li" style="display: list-item;">
-                                                                                    <a href="index/index/articalList/id/27">党建学习</a>
-                                
-                        <!-- <a href="javascript:;">党建学习</a> -->
-
-
-                        <ul>
-                                                        
-                                                                                </ul>
-                    </li>
-            </ul>
-        </div>
-
-    <div id="app" style="margin-top: 20px;">
-        <div class="mian" style="background: white;">
-            <!-- 标题 -->
-           <!--  <div class="mian_title">
-                            </div> -->
-            <!-- 主体 -->
-            <div class="mian_bd">
-                <div class="mian_bd_left">
-                    <!-- 项目名称 -->
-                    <div class="mian_bd_left_top">
-                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
-
-                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
-                                          关于矿联
-                                    </div>
-                                    <div class="li_right" style=" background-color:#EEEEEE">
-
-                                    </div>
-
-
-                        </div>
-                        <div class="mian_bd_left_top_bd">
-
-                            <ul>
-                            <a href="index/index/jianjie" style="text-decoration:none">
-                                <li style=" background-color:#EEEEEE">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联简介
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-</a>
-
-
-
-
-
-  <a href="index/index/zhangcheng" style="text-decoration:none">
-                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
-                                    <div class="li_left" style=" font-size:14px">
-                                     &nbsp   <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联章程
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-<a href="index/index/zuzhijiegou" style="text-decoration:none">
-                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
-                                    <div class="li_left" style=" font-size:14px">
-                                       &nbsp <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 组织结构
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-<a href="index/index/lindao" style="text-decoration:none">
-                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 主要领导
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-                                <a href="index/index/hyml" style="text-decoration:none">
-
-                                 <li style=" background-color:#EEEEEE">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 会员名录
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-                                </a>
-
-                                 <a href="index/index/lxfs" style="text-decoration:none">
-
- <li style=" background-color:#EEEEEE">
-                                    <div class="li_left" style=" font-size:14px">
-                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 联系方式
-                                    </div>
-                                    <div class="li_right">
-
-                                    </div>
-                                </li>
-</a>
-
-
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 项目发布者 -->
-                    <div class="mian_bd_left_top mian_bd_left_bd">
-                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
-
-                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
-                                          热点新闻
-                                    </div>
-                                    <div class="li_right" style=" background-color:#EEEEEE">
-
-                                    </div>
-
-
-                        </div>
-                        <div class="mian_bd_left_top_bd">
-                            <ul>
-
-  
-                            </ul>
-
-                            <div class="mian_bd_left_detail">
-                                <!-- <el-button type="primary">查看企业详情</el-button> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mian_bd_right">
-                    <div class="mian_bd_right_hd" >
-    <div style=" float:left; width:70px; height:30px; line-height:30px; font-size:16px;margin-top: -10px;     font-weight: bold;">名录详情</div>
-  <div style=" float:right; width:260px; height:30px; line-height:30px; font-size:14px;margin-top: -10px;">当前位置：首页 >> 关于矿联 >> 名录详情</div>
-
-
-                    </div>
- <style>
-
-                .qiye1{
-                    width:265px; height:185px; float: left;
-                    background: #f7f7f7;
-
-                    margin-left:10px;
-                    margin-top:10px;
-
-                }
-
-                .qiye2{
-                    width:265px; height:130px;
-
-                }
-                .qiye3{
-                    width:265px; height:50px;
-                    color:black;
-                    line-height:50px;
-                    text-align:center;
-
-                }
-                table{
-
-                    width:100%;
-
-
-                }
-            </style>
-
-                    <div class="mian_bd_right_bd">
-
-
-                 <p style="margin-top:0;margin-bottom:0;text-indent:32px;text-align:center;background:rgb(255,255,255)"><strong><span style="font-family: 小标宋;color: rgb(6, 30, 245);letter-spacing: 1px;font-size: 15px">广西森合高新科技股份有限公司</span></strong></p><p style="margin-top:0;margin-bottom:0;text-indent:32px;text-align:center;background:rgb(255,255,255)"><strong><span style="font-family: 小标宋;color: rgb(6, 30, 245);letter-spacing: 1px;font-size: 15px">Guangxi Senhe High Technology Co., Ltd.</span></strong></p><p style="margin-top:0;margin-bottom:0;text-indent:35px;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255)"><span style=";font-family:&#39;Helvetica Neue&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:宋体">（</span></span><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">下称</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">森合高科</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">）是专业从事环保型黄金选矿技术产品研发、生产和销售的高新科技企业。森合高科生产的</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">金蝉</span></span></strong><strong><sup><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 12px;vertical-align: super">®</span></sup></strong><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">环保型黄金选矿剂</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">，是</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">环保提金</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">专利品牌，可取代氰化钠在黄金工业中的应用。该产品被中华人民共和国工业和信息化部认定为</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">第三批专精特新</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">小巨人</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">企业</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">、入选</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">自然资源部《矿产资源节约和综合利用先进适用技术目录（</span>2022<span style="font-family:宋体">年版）》</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">、荣获</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">中国黄金协会科学技术一等奖</span><span style="font-family:Helvetica Neue">”“</span><span style="font-family:宋体">广西科技成果鉴定</span><span style="font-family:Helvetica Neue">”“</span><span style="font-family:宋体">广西科技创新基金奖</span><span style="font-family:Helvetica Neue">”</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">等荣誉。目前，森合高科与中国黄金集团、山东黄金集团、山东招金集团、紫金矿业集团及越南越老公司等国内外大型黄金生产企业建立了长期合作关系，</span></span><span style=";font-family:宋体;letter-spacing:1px;font-size:15px">（产品）</span><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">在提高黄金生产企业经济效益的同时，大大缓解了黄金工业发展对人类生存环境带来的危害，真正实现</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">绿色矿山，环保提金</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">！</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">森合高科将以现代化的生产管理、物流运输及专业化的技术团队服务于全球客户</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px">!</span></p><p style="margin-top:0;margin-bottom:0;text-indent:35px;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255)"><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">Guangxi Senhe High</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;<span style="font-family:Times New Roman">Technology</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;Co., Ltd. (hereinafter referred to as “Senhe Hi-Tech<span style="font-family:Times New Roman">”) is a high-tech enterprise specializing in the research, development, production and sales of environmental-friendly gold </span></span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">dressing</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;technology products. </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">Jin Chan</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">®, an environmental</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">-</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">friendly gold </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">dressing agent</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;produced by Senhe Hi-Tech, is a patented brand of “environmental protection for gold extraction” and can replace the application of sodium cyanide in gold industry. </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">T</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">his product </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">was </span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">selected into the Catalogue of Advanced and Applicable Technologies for Saving and Comprehensive Utilization of Mineral Resources (2022 Edition) by the Ministry of Natural Resources of China</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">, and Senhe Hi-Tech</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;was recognized by the Ministry of Industry and Information Technology of China as </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">one of </span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">the third batch of specialized and innovative “little giant” enterprises, and won </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">such awards as </span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">the first prize of science and technology </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">from</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;China Gold Association, appraisal of scientific and technological achievements in Guangxi and Guangxi Science and Technology Innovation Fund Award. At present, Senhe Hi-Tech has established long-term cooperative relations with large domestic and foreign gold producers, such as China National Gold Group, Shandong Gold Group, Shandong Zhaojin Group, Zijin Mining Group and Vietnam-Laos Company of Vietnam. The product not only improve</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;the economic benefits of gold producers, but also greatly alleviate</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;the harm caused to the environment by the development of the gold industry, truly realizing environmenta</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">l-</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">friendly gold extraction. Senhe Hi-Tech will serve customers all over the world with modern production management, logistics and transportation and professional technical team!</span></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815663221.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815718275.png"/></span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p style="text-indent: 37px"><strong><span style="font-family: 宋体;font-size: 19px">产品介绍：</span></strong><strong><span style="font-family: Tahoma;font-size: 19px"><span style="font-family:宋体">金蝉</span></span></strong><strong><sup><span style="font-family: Tahoma;font-size: 19px;vertical-align: super">®</span></sup></strong><strong><span style="font-family: Tahoma;font-size: 19px"><span style="font-family:宋体">环保型黄金选矿剂</span></span></strong></p><p style="text-indent: 37px"><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">Product Introduction: Jin Chan® </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">E</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">nvironmental-friendly </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">G</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">old </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">D</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">ressing </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">A</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">gent </span></strong></p><p style="text-indent: 28px"><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">金蝉</span>®<span style="font-family:宋体">环保型黄金选矿剂是广西森合高新科技股份有限公司自主研发的可取代氰化钠用于黄金选矿的高新科技产品，是</span><span style="font-family:Calibri">“</span><span style="font-family:宋体">环保提金</span><span style="font-family:Calibri">”</span><span style="font-family:宋体">专利产品；产品在不改变原有</span><span style="font-family:Calibri">“</span><span style="font-family:宋体">氰化提金</span><span style="font-family:Calibri">”</span><span style="font-family:宋体">工艺及设备的情况下，</span></span><span style=";font-family:宋体;font-size:14px">可</span><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">替代氰化钠用于黄金生产；同时具有</span></span><strong><span style="font-family: Calibri;font-size: 14px"><span style="font-family:宋体">低毒环保、回收率高、稳定性好、操作方便、回收快、用量少、成本低、储存运输方便</span></span></strong><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">等优点。</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">Jin Chan</span></span><span style=";font-family:Calibri;font-size:14px">®</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;environment</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">al</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">-friendly gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing agent</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;is</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">a high-tech product</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;used in gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing, which is </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">independently developed by Senhe High-tech </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">as its patent </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">product</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">of </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">“environmental</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">-</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">friendly gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">”</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">and can replace sodium cyanide; </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">t</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">he product can replace sodium cyanide in gold production without changing the original </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">technology of </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">“gold extraction</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">by </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">cyanide” and </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">the </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">equipment; </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">a</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">t the same time, it has the advantages of low toxicity, environmental</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">-friendly</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">, high recovery rate, good stability, </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">easy</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;operation, fast recovery, less dosage, low cost, convenient storage and transportation.</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815767757.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815797960.png"/></span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">产品规格形态：灰白色粉末状或颗粒状</span></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">产品包装及规格：袋装</span></span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Calibri">, </span></span><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">每袋产品净重</span>25KG±0.2KG<span style="font-family:宋体">（图示）</span></span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">，为防止假冒伪劣产品流入市场，于</span><span style="font-family:Calibri">2023</span><span style="font-family:宋体">年</span><span style="font-family:Calibri">2</span><span style="font-family:宋体">月起生产每一批次的产品，在原包装上加印防伪码。客户可通过扫描防伪码了解产品真伪、防伪码所属产品、查询次数、产品介绍、规格形态及公司信息。产品一袋一码，产品的客户流向信息、所属批次将备案于我司，进行全程追溯。</span></span></p><p style="margin-left:24px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Product form: greyish-white powder or granule</span></p><p style="margin-left:24px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Product packaging and specifications: bagged</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">, </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">the net weight of each bag is 25</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">kg</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">±0.2</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">kg</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;(</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">as shown in the picture</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">). Each batch of products produced </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">after</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;February 2023</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">will be printed</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">anti-counterfeiting codes</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">on the original packaging </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">to avoid</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;shoddy products from entering the market.</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Customers can </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">learn</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">about</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;the authenticity of products, products to which the security code belongs, inquiry times, product introduction, specifications and company information by scanning the security code. Each package of products has a code, and the product flow information and batches are registered with our company for full traceability.</span></p><p style="margin-left: 24px"><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:宋体">工厂实力</span> <span style="font-family:Tahoma">Factory Strength</span></span></strong></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815832424.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815864514.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815898434.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815939931.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815962936.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816003390.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px"><span style=";font-family:宋体;font-size:14px">森合高科</span><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">金蝉</span>®<span style="font-family:宋体">环保型黄金选矿剂</span></span><span style=";font-family:宋体;font-size:14px">的</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">工厂占地面积超</span><span style="font-family:Calibri">100</span><span style="font-family:宋体">亩，配以先进的自动化生产线，从投料、进料、混料、冷却、破碎到包装实现全程自动化；厂区以严格的质量管理要求控制每个流程节点，以高量产和充足的货源，保障超</span><span style="font-family:Calibri">30</span><span style="font-family:宋体">多个国家的全球市场供应。</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">The factory of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Jin</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Chan</span></span><span style=";font-family:Calibri;font-size:14px">®</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;environmental-friendly gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing agent</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;covers an area of over 100 mu, and is equipped with advanced automatic production lines to realize full automation from feeding, mixing, cooling, crushing to packaging. The factory controls each process node with strict quality management requirements, and ensures the global market supply of more than 30 countries with high mass production and sufficient supply.</span></p><p style="margin-left: 24px"><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p style="margin-left: 24px"><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816158758.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/1704681619693.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816212090.png"/></span></strong></p><p style="margin-left: 24px;text-indent: 14px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816305434.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816329128.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816356634.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816392802.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816423631.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">中国黄金集团田林高龙金矿</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Gao Long Gold Mine</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">of </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">China Gold Group</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">in </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Tianlin</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:宋体">甘肃鸿远矿业</span> </span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Gansu Hongyuan Mining Industry</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/1704681649728.png"/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816516697.png"/></span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 70px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:宋体">广西容县金矿</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:宋体">老挝阿苏坡</span><span style="font-family:宋体">波里坎</span><span style="font-family:宋体">塞金矿</span></span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Guangxi Rongxian Gold Mine &nbsp;&nbsp;&nbsp;</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Bolikhamsai</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Gold Mine</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">in Attapeu, Laos</span></span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">公司经过多年的励精图治与努力发展，得到政府部门的认可和大力支持，获得一系列荣誉及政府奖励。与多家国内外大型黄金企业达成长期战略合作协议，为推动中国黄金矿业发展而努力，实现矿业经济合作共赢、绿色持续和谐发展。</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">After years of hard work and development, the company has been recognized and strongly supported by </span><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:Times New Roman">the </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">government and won a series of honors and awards</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">from </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">the</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">government. </span><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:Times New Roman">It</span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">&nbsp;ha</span><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">&nbsp;reached long-term strategic cooperation agreements with a number of large domestic and foreign gold enterprises, and worked hard to promote the development of China’s gold mining industry, so as to achieve win-win economic cooperation and green, sustainable and harmonious development of the mining industry.</span></p><p><br/></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer" style=" top:10px">
-  <div class="footTop" >
-    <div class="link">
-      <style type="text/css" media="screen">
-        .nav{
-            font-size:18px;
-        }
-        .menu{
-            width:1100px;
-        }
-        .link2 select {
-          font-size: 14px;
-          margin-right: 10px;
-          width: 165px;
-          height: 30px;
-          padding: 0 10px;
-        }
-        .link2{
-          width:170px; height:48px; float: left;
-        }
-        .banq{
-          width:150px;
-          height:30px;
-          line-height:30px;
-          float:left;
-          color:white;
-          font-size:14px;
-
-        }
-      </style>
-      <!-- <script src="assets/jquery.js"></script> -->
-      <script>
-        $(document).ready(function(){
-
-          $('.jump-select').on('change',function() {
-            var url = $(this).val();
-            // alert(url);
-            window.location.href=url;
-          })
-        });
-
-      </script>
-      <div style=" width:100%; height: 48px;  margin-top: 20px;">
-        <div  class="link2" style=" color: white; font-size:18px; line-height: 30px; width:110px">
-          友情链接：
-        </div>
-        <div  class="link2">
-            <select name="select" class="jump-select" id="j1">
-              <option selected="selected">政府机构</option>
-              <option value="https://www.mnr.gov.cn/">中华人民共和国自然资源部</option><option value="https://www.cgs.gov.cn/">中国地质调查局</option><!--               <option value="http://www.gov.cn/guowuyuan/">国务院</option>
-
-              <option value="http://www.mnr.gov.cn/">自然资源部</option>
-
-              <option value="https://www.mee.gov.cn/">生态环境部</option>
-
-              <option value="https://www.mem.gov.cn/">应急管理部</option>
-
-              <option value="http://www.gxzf.gov.cn/index.shtml">广西壮族自治区人民政府</option>
-
-              <option value="https://www.gx.gov.cn/">南宁市人民政府</option>
-              <option value="https://www.fmprc.gov.cn/">外交部</option>
-              <option value="http://www.mofcom.gov.cn/">商务部</option>
-              <option value="https://www.most.gov.cn/index.html">科技部</option>
-              <option value="https://www.ccpit.org/">中国国际贸易促进会</option>
- -->
-            </select>
-        </div>
-
-        <div  class="link2">
-            <select name="select" class="jump-select">
-              <option selected="selected">有关部门</option>
-  <option value="https://www.caexpo.org.cn/">中国—东盟博览会</option><option value="https://dnr.gxzf.gov.cn/">广西壮族自治区自然资源厅</option><option value="https://zrzyj.nanning.gov.cn/">广西南宁市自然资源局</option><option value="http://dkj.gxzf.gov.cn/">广西壮族自治区地质矿产勘查开发局</option><option value="http://dzhj.dnr.gxzf.gov.cn/PortalWebSite">广西壮族自治区地质环境监测站</option><option value="https://zzzx.dnr.gxzf.gov.cn/">广西壮族自治区自然资源生态修复中心</option><option value="https://jyzx.dnr.gxzf.gov.cn/">广西壮族自治区矿产资源储量评审中心（交易中心）</option><option value="http://swt.gxzf.gov.cn">广西壮族自治区商务厅</option><option value="http://gxt.gxzf.gov.cn">广西壮族自治区工业和信息化厅</option><option value="http://wsb.gxzf.gov.cn">广西壮族自治区外事办公室</option><option value="http://kjt.gxzf.gov.cn">广西壮族自治区科学技术厅</option><option value="http://fgw.gxzf.gov.cn">广西壮族自治区发展和改革委员会</option>             <!--  <option value="http://shzz.mzt.gxzf.gov.cn/">广西社会组织信息平台</option>
-
-              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
-
-              <option value="http://mzt.gxzf.gov.cn/">广西民政厅</option>
-
-              <option value="http://sthjt.gxzf.gov.cn/">广西生态环境厅</option>
-
-              <option value="http://yjglt.gxzf.gov.cn/">广西应急管理厅</option>
-
-              <option value="http://gxt.gxzf.gov.cn/">广西经济和信息化厅</option>
-
-              <option value="http://fgw.gxzf.gov.cn/">广西发展和改革委员会</option>
-              <option value="http://wsb.gxzf.gov.cn/">自治区外事办</option>
-              <option value="https://www.ccpitgx.org/">中国贸促会广西分会</option>
-              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
-              <option value="http://kjt.gxzf.gov.cn/">科技厅</option>
-              <option value="http://swt.gxzf.gov.cn/">商务厅</option>
-              <option value="http://dkj.gxzf.gov.cn/">地矿局</option>
- -->
-
-            </select>
-        </div>
-        <div  class="link2">
-            <select name="select" class="jump-select">
-              <option selected="selected">有关协会</option>
-         <option value="https://www.chinania.org.cn">中国有色金属工业协会</option><option value="http://www.chinamining.org.cn">中国矿业联合会</option><option value="http://www.zjmining.org.cn">浙江省矿业联合会</option><option value="http://www.jskx.org/">江苏省矿业协会</option><option value="http://www.ahskysh.cn">安徽省矿业商会</option><option value="http://www.jxklw.cn/index.html">江西省矿业联合会</option><option value="http://hunanmining.com">湖南省矿业协会</option><option value="http://www.hbkylhh.com/">湖北省矿业联合会</option><option value="http://www.gzskyxh.com/">贵州省矿业协会</option><option value="http://www.scskx.com">四川省矿业协会</option><option value="https://www.cqsksxh.com">重庆市矿山协会</option><option value="http://www.ynmining.com">云南省矿业协会</option>
-   <!-- <option value="http://www.gxkyxh.com/">广西矿业协会</option>
-              <option value="http://www.zgss.org.cn/index.html">中国砂石协会</option>
-
-              <option value="http://www.hkga.org/site/">香港地理学会</option>
-
-              <option value="https://www.ctia.net.cn/">中国冶金矿山企业协会</option>
-
-              <option value="https://www.ctia.net.cn/">中国钨业协会</option>
-
-              <option value="http://www.hainanast.org.cn/">海南省地质地理学会</option>
-
-              <option value="http://www.ynmining.com/">云南省矿业协会</option>
-
-              <option value="https://cqdzkyxh.com/">重庆市地质矿业协会</option>
-
-              <option value="http://ccmassociation.cn/">中国化学矿业协会</option>
-
-              <option value="http://www.cnmia.cn/">中国非金属矿工业协会</option>
-
-              <option value="http://www.cngold.org.cn/">中国黄金协会</option>
-
-              <option value="https://www.chinania.org.cn/">中国有色金属工业协会</option>
-
-              <option value="http://www.geosociety.org.cn/">中国地质学会</option>
-
-              <option value="http://www.ahgcc.cn/index.html">安徽省工商业联合会</option>
-
-              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
-
-              <option value="http://www.jskx.org/">江苏省矿业协会</option>
-
-              <option value="http://www.zjmining.org.cn/">浙江省矿业联合会</option>
-
-              <option value="http://www.jxklw.cn/">江西省矿业联合会</option>
-
-              <option value="http://www.hbkylhh.com/">湖北矿业联合会</option>
-
-              <option value="http://www.sdkyxh.com/">山东省矿业协会</option>
-
-              <option value="http://ahskysh.cn/">安徽省矿业商会</option>
-
-              <option value="http://hunanmining.com/">湖南省矿业协会</option>
-              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
-              <option value="http://www.scskx.com/">四川等各省区矿业商协会</option>
-
- -->
-          </select>
-        </div>
-
-        <div  class="link2">
-            <select name="select" class="jump-select" >
-              <option selected="selected">海外机构</option>
-                     <option value="https://ccop.asia/Index">东亚东南亚地学计划协调委员会（CCOP）</option><option value="https://nma.org/"> 矿产品协会 Mineral Products Association</option><option value="https://nma.org/">美国国家矿业协会NationalMining Association</option><option value="https://minerals.org.au/"> 澳大利亚矿产委员会  Minerals Council of Australia</option><option value="https://www.opec.org/opec_web/en/">欧佩克opec</option><option value="https://miningvietnam.com/?lang=en"> 越南矿业  Mining Vietnam</option>              <!-- <option value="http://dmkczywlw.com/">东盟各国能源矿产部</option> -->
-              <!-- <option value="http://www.igeo.cgs.gov.cn/">地质局和知名地学科学机构</option> -->
-              <!-- <option value="http://www.chinamining.org.cn/">国际权威矿业新闻网站</option> -->
-            </select>
-        </div>
-
-        <div  class="link2">
-            <select name="select" class="jump-select">
-              <option selected="selected">矿业企业</option>
-                 <option value="https://www.jlbkjt.com">吉利百矿</option><option value="https://www.camining.net/Kyforum">中国-东盟地学合作中心</option><option value="http://mn.southmn.com/">南方锰业集团有限公司</option><option value="https://www.chinalco.com.cn/">中国铝业股份有限公司广西分公司</option><option value="https://www.gctong.com/index.php?homepage=disidizhidui">广西壮族自治区第四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1977">广西壮族自治区地球物理勘察院</option><option value="www.egrcn.com">广东英格尔地质装备科技股份有限公司</option><option value="www.gxdkjt.cn">广西地矿建设集团有限公司</option><option value="www.bsbkjt.com">吉利百矿集团有限公司</option><option value="http://gxteam3.gxdkj.org.cn/">广西壮族自治区第三地质队</option><option value="https://www.liugong.com/">广西柳工机械股份有限公司</option><option value="https://www.china-tin.com/">广西华锡有色金属股份有限公司</option><option value="http://www.zggxhj.com/">中国黄金集团广西有限公司</option><option value="https://www.glut.edu.cn/">桂林理工大学地球科学学院</option><option value="www.bsgtjt.cn">广西百色工业投资发展集团有限公司</option><option value="www.gxshgk.com">广西森合高新科技股份有限公司</option><option value="www.tuhaogroup.com">广西途昊集团有限公司</option><option value="http://www.xin-manganese.com/Cn/">广西新振锰业集团有限公司</option><option value="http://ddy.gxdkj.org.cn/">广西壮族自治区地质调查院</option><option value="www.rigm.ac.cn">中国有色桂林矿产地质研究院有限公司</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1972">广西地矿华地工贸集团有限责任公司</option><option value="http://www.cnesip.com/Enterprise/Main.aspx?UserId=8668">核工业二三〇研究所</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1961">广西壮族自治区二七二地质队</option><option value="https://www.gxdkcs.gxdkj.org.cn">广西壮族自治区地质矿产测试研究中心</option><option value="http://gxjbtz.cn.gongxuku.com/">广西金璧投资有限公司</option><option value="http://www.gbm.ceec.net.cn/">中能建绿色建材有限公司</option><option value="http://www.ccicgx.com/">中国检验认证集团广西有限公司</option><option value="http://www.gmtgx.com/">扶绥桂民投新材料科技发展有限公司</option><option value="https://guigang06877.11467.com/">贵港市恒丰矿业有限责任公司</option><option value="https://www.gxu.edu.cn/">广西大学资源环境与材料学院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1927">广西壮族自治区二〇四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1954">广西壮族自治区二七〇地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1929">广西壮族自治区二七一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1974">广西壮族自治区二七三地质队</option><option value="https://www.274dzd.gxdkj.org.cn">广西壮族自治区二七四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1978">广西壮族自治区三〇七核地质大队</option><option value="http://gx305.gxdkj.org.cn/">广西壮族自治区三〇五核地质大队</option><option value="www.gx310.gxdkj.org.cn">广西壮族自治区三一〇核地质大队（广西壮族自治区放射性核素检测中心）</option><option value="http://www.gxzrdk.com/">广西中润地质勘查有限公司</option><option value="https://www.glss.gxdkj.org.cn/">桂林山水大酒店有限责任公司</option><option value="http://yjyjy.b2b.chemm.cn/">广西冶金研究院有限公司</option><option value="http://gxhdy.gxdkj.org.cn/">广西壮族自治区海洋地质调查院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1976">广西壮族自治区第一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1956">广西壮族自治区第七地质队</option><option value="http://gxyg.gxdkj.org.cn/">广西壮族自治区遥感中心</option><option value="http://www.gxdzkcy.com/">中国冶金地质总局广西地质勘查院</option><option value="https://www.007swz.com/Company/95206910">广西中冶军创实业集团有限公司</option><option value="www.gxrunxing.cn">广西润兴新材料有限公司</option><option value="https://www.cchjjl.com/">长春黄金设计院工程建设管理有限公司</option><option value="http://gx.ccgc.cn/">中国煤炭地质总局广西煤炭地质局</option>            </select>
-        </div>
-
-        <div style=" width:700px; margin:0 auto 0; ">
-            <ul>
-              <li style="color:#fff;font-weight:bold; font-size:13px">
-                  <a href="#">网站首页</a> &nbsp &nbsp |
-              </li>
-            </ul>
-            <ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">分支机构</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">会员管理</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">行业新闻</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">项目推介</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">关于矿联</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">政策法规</a>
-                        &nbsp|
-                    </li>
-                </ul><ul>
-                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
-                        <a href="javascript:" style="">党建学习</a>
-                        &nbsp|
-                    </li>
-                </ul>        </div>
-
-
-
-        <div style=" width:100%; margin:0 auto 0;float: left;text-align: center; ">
-          <div class="banq" style=" width:100%;">版权所有：广西海外矿业产业联合会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0771-2706577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：南宁市青秀区建政路1号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：gxhkl@qq.com</div>
-
-          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 30px;">
-            Copyright 2023－2024 All Rights Reserved
-          </div>
-
-          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 10px;">
-            备案序号：桂ICP备2024032759号
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footbot" style=" width: 90%;">
-     <div style="height:200px;top: 150px;display:flex; float:right;margin-top: 40px;">
-                      <div style="float:left;width:160px;">
-                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
-                              <img src="assets/qrcode.jpg" alt="" width="100" height="100">
-                          </div>
-                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
-                              矿联官方微信公众号
-                          </div>
-                      </div>
-                      <!-- <div style="float:left;width:200px;clear: both;">
-                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
-                              <img src="assets/shouji.png" alt="" width="100" height="100">
-                          </div>
-                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
-                              手机网站
-                          </div>
-                      </div> -->
-                  </div>
-    </div>
-</div>
-
-
-
-
-
-    <script src="/Public/kuangye/js/vue.min.js"></script>
-    <script src="/Public/kuangye/js/index.js"></script>
-
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                about_title: "", //详情标题
-
-            },
-            created() {
-                // 读取地址中的url
-                var url = window.location.href;
-                // 读取url中的参数
-
-                console.log(url);
-
-            },
-        })
-
-
-    </script>
-</body>
-
+
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>会员名录详情</title>
+
+    <link rel="stylesheet" href="/Public/kuangye/about.css">
+
+    <link rel="stylesheet" href="/Public/kuangye/css/index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.6/lib/theme-chalk/index.css">
+
+
+
+    <link rel="stylesheet" href="/Public/kuanglian/index/indexDeatils.css">
+
+    <script src="assets/jquery.js"></script>
+
+    <script type="text/javascript" src="/Public/kuanglian/index/jquery.SuperSlide.2.1.3.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- 迷你导航 -->
+
+    <style type="text/css" media="screen">
+
+            .nav{
+
+                font-size:18px;
+
+                display:flex !important;
+
+                justify-content: space-around !important;
+
+            }
+
+
+
+        </style><!-- 迷你导航 -->
+
+
+
+          <script >
+
+
+
+ function dulu(){
+
+
+
+    alert('敬请期待');
+
+ }
+
+
+
+
+
+          </script>
+
+
+
+
+
+        <div class="miniNav">
+
+            <div class="mianBox">
+
+                <div class="miniNav-left"></div>
+
+                <div class="miniNav-right" >
+
+                    <div ><a href="javascript:translate.changeLanguage('zh');" id="StranLink" title="點擊以繁體中文方式瀏覽">简体版</a></div>
+
+                    <div ><a href="javascript:translate.changeLanguage('en');">English</a></div>
+
+                    <div ><a>设为首页</a></div>
+
+                    <div ><a href="index/index/dl">会员登录</a></div>
+
+                                        <!-- <div><a href="http://dk.gxnnxykj.com/data/广西海外矿业产业联合会申请入会登记表2022.3.docx">下载会员表</a></div> -->
+
+                </div>
+
+                <div class="clearBoth"></div>
+
+            </div>
+
+        </div>
+
+        <!-- 头部搜索 -->
+
+        <div class="nav_toolbar">
+
+            <div class="mainBox" style="position: relative;">
+
+                <div class="left">
+
+                    <img src="assets/2024-02-19/65d2b62f23d52.png" style="margin-top: 25px; width:755px;height: 101px;"  />
+
+                </div>
+
+
+
+             <!--     <div class="left" style="font-size: 35px;padding-top: 50px;color:black;">
+
+                   <img src="/Public/kuanglian/index/images/123.png" width="450" alt="">
+
+                </div> -->
+
+
+
+                <div class="right" style="width:320px;">
+
+                    <div class="search" style="margin-top: 25px;">
+
+                        <form action="/index/index/searchList/" id="searchform" name="searchform"  >
+
+                            <input type="text" id="q" value="请输入关键字" name="kwd" class="search_input" onfocus="javascript:if(this.value=='请输入关键字')this.value='';">
+
+                            <!-- <input type="submit" class="search_btn" value="" id="btn" onclick="t1()"> -->
+
+                            <input type="submit" class="search_btn" value="" id="btn" >
+
+                            <input type="hidden" value="290" name="t_id">
+
+                            <input type="hidden" value="15" name="pageSize">
+
+                            <input type="hidden"  value="1" name="qIndex">
+
+                            <input type="hidden"  value="CMSydylgw" id="siteId">
+
+                        </form>
+
+                    </div>
+
+                    <script type="text/javascript">
+
+
+
+                    function t1 () {
+
+                        console.log(111)
+
+                         window.location.href = "index/index/articalList/id/8"
+
+                            console.log(222)
+
+                         return
+
+                    }
+
+
+
+                    </script>
+
+                    <div class="linkbar">
+
+                        <ul>
+
+                            <li>搜索热词:</li>
+
+
+
+                            <!--    -->
+
+                            <li>
+
+                                <a href="javascript:void(0);">海外矿业</a>
+
+                            </li>
+
+                            <!-- <li>
+
+                                <a href="javascript:void(0);">亚投行</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="javascript:void(0);">丝路基金</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="javascript:void(0);">经济走廊</a>
+
+                            </li> -->
+
+                            <div class="clearBoth"></div>
+
+                        </ul>
+
+                        <div class="clearBoth"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="clearBoth"></div>
+
+                <div class="txtScroll-top2 content"></div>
+
+            </div>
+
+        </div>
+
+        <!-- 主导航 -->
+
+        <div class="nav">
+
+            <ul class="menu">
+
+                <li id="n1" class="nav_li" style="display: list-item;">
+
+                    <a href="index/index/index">网站首页</a>
+
+                </li>
+
+                <li id="n2" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/1">分支机构</a> -->
+
+                                    <a href="index/index/articalList/id/8">分支机构</a>                                                                                                                                                                                                                        <!-- <a href="javascript:;">分支机构--1</a> -->
+
+                        <!-- <a href="javascript:;">分支机构</a> -->
+
+
+
+
+
+                        <ul>
+
+                            <li>
+
+                                    <a href="index/index/articalList/id/8">锰镍专家委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/9">铝煤专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/35">有色金属专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/34">贵金属专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/36">非金属专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/37">地质装备专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/38">地质技术专业委员会</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/39">贸易咨询专业委员会</a>
+
+                                </li>                            
+
+                                                                                </ul>
+
+                    </li><li id="n3" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/2">会员管理</a> -->
+
+                                                                        <a href="index/index/hyfw">会员管理</a>                                                                                                                                                                                    <!-- <a href="javascript:;">会员管理--2</a> -->
+
+                        <!-- <a href="javascript:;">会员管理</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        <li>
+
+                                    <a href="index/index/hyfw">会员服务</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/dl">会员登录</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/reg">会员申请</a>
+
+                                </li>
+
+                                                                                </ul>
+
+                    </li><li id="n4" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/3">行业新闻</a> -->
+
+                                                                                                            <a href="index/index/articalList/id/14">行业新闻</a>                                                                                                                                                <!-- <a href="javascript:;">行业新闻--3</a> -->
+
+                        <!-- <a href="javascript:;">行业新闻</a> -->
+
+
+
+
+
+                        <ul>
+
+                            <li>
+
+                                    <a href="index/index/articalList/id/14">会员动态</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/15">国内矿业</a>
+
+                                </li><li>
+
+                                    <a href="index/index/articalList/id/16">海外矿业</a>
+
+                                </li>                            
+
+                                                                                </ul>
+
+                    </li><li id="n5" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/6">项目推介</a> -->
+
+                                                                                                                                                <a href="index/index/home">项目推介</a>                                                                                                            <!-- <a href="javascript:;">项目推介--6</a> -->
+
+                        <!-- <a href="javascript:;">项目推介</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                                                        <li>
+
+                                    <a href="index/index/home">矿业项目</a>
+
+                                </li>                        </ul>
+
+                    </li><li id="n6" class="nav_li" style="display: list-item;">
+
+                        <a href="index/index/jianjie">关于矿联</a>
+
+                        
+
+                        <!-- <a href="javascript:;">关于矿联</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                            <li>
+
+                                    <a href="index/index/jianjie">矿联简介</a>
+
+                                </li>
+
+
+
+                                 <li>
+
+                                    <a href="index/index/zhangcheng">矿联章程</a>
+
+                                </li>
+
+                                 <li>
+
+                                    <a href="index/index/zuzhijiegou">组织结构</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/lindao">主要领导</a>
+
+                                </li>
+
+                                 <li>
+
+                                    <a href="index/index/hyml">会员名录</a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="index/index/lxfs">联系方式</a>
+
+                                </li>                                                    </ul>
+
+                    </li><li id="n7" class="nav_li" style="display: list-item;">
+
+                                                                                                                    <!-- <a href="index/index/articalList/id/32">政策法规</a> -->
+
+                                                                                                                                                                                    <a href="index/index/articalList/id/32">政策法规</a>                                                                        <!-- <a href="javascript:;">政策法规--32</a> -->
+
+                        <!-- <a href="javascript:;">政策法规</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                                                                                </ul>
+
+                    </li><li id="n8" class="nav_li" style="display: list-item;">
+
+                                                                                    <a href="index/index/articalList/id/27">党建学习</a>
+
+                                
+
+                        <!-- <a href="javascript:;">党建学习</a> -->
+
+
+
+
+
+                        <ul>
+
+                                                        
+
+                                                                                </ul>
+
+                    </li>
+
+            </ul>
+
+        </div>
+
+
+
+    <div id="app" style="margin-top: 20px;">
+
+        <div class="mian" style="background: white;">
+
+            <!-- 标题 -->
+
+           <!--  <div class="mian_title">
+
+                            </div> -->
+
+            <!-- 主体 -->
+
+            <div class="mian_bd">
+
+                <div class="mian_bd_left">
+
+                    <!-- 项目名称 -->
+
+                    <div class="mian_bd_left_top">
+
+                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
+
+
+
+                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
+
+                                          关于矿联
+
+                                    </div>
+
+                                    <div class="li_right" style=" background-color:#EEEEEE">
+
+
+
+                                    </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="mian_bd_left_top_bd">
+
+
+
+                            <ul>
+
+                            <a href="index/index/jianjie" style="text-decoration:none">
+
+                                <li style=" background-color:#EEEEEE">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联简介
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+</a>
+
+
+
+
+
+
+
+
+
+
+
+  <a href="index/index/zhangcheng" style="text-decoration:none">
+
+                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                     &nbsp   <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 矿联章程
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+<a href="index/index/zuzhijiegou" style="text-decoration:none">
+
+                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                       &nbsp <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 组织结构
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+<a href="index/index/lindao" style="text-decoration:none">
+
+                                 <li style=" background-color:#EEEEEE" style="text-decoration:none">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 主要领导
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+                                <a href="index/index/hyml" style="text-decoration:none">
+
+
+
+                                 <li style=" background-color:#EEEEEE">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 会员名录
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+                                </a>
+
+
+
+                                 <a href="index/index/lxfs" style="text-decoration:none">
+
+
+
+ <li style=" background-color:#EEEEEE">
+
+                                    <div class="li_left" style=" font-size:14px">
+
+                                      &nbsp  <img src="/Public/kuanglian/index/images/ico2.png" alt="">&nbsp 联系方式
+
+                                    </div>
+
+                                    <div class="li_right">
+
+
+
+                                    </div>
+
+                                </li>
+
+</a>
+
+
+
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 项目发布者 -->
+
+                    <div class="mian_bd_left_top mian_bd_left_bd">
+
+                        <div class="mian_bd_left_top_hd" style=" background-color: #EEEEEE;color:white; font-size: 16px;   padding: 0px">
+
+
+
+                        <div class="li_left" style=" background-color: #547BE8;color:white; font-size: 16px; width: 108px; height: 50px; text-align: center; line-height: 50px;">
+
+                                          热点新闻
+
+                                    </div>
+
+                                    <div class="li_right" style=" background-color:#EEEEEE">
+
+
+
+                                    </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="mian_bd_left_top_bd">
+
+                            <ul>
+
+
+
+  
+
+                            </ul>
+
+
+
+                            <div class="mian_bd_left_detail">
+
+                                <!-- <el-button type="primary">查看企业详情</el-button> -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mian_bd_right">
+
+                    <div class="mian_bd_right_hd" >
+
+    <div style=" float:left; width:70px; height:30px; line-height:30px; font-size:16px;margin-top: -10px;     font-weight: bold;">名录详情</div>
+
+  <div style=" float:right; width:260px; height:30px; line-height:30px; font-size:14px;margin-top: -10px;">当前位置：首页 >> 关于矿联 >> 名录详情</div>
+
+
+
+
+
+                    </div>
+
+ <style>
+
+
+
+                .qiye1{
+
+                    width:265px; height:185px; float: left;
+
+                    background: #f7f7f7;
+
+
+
+                    margin-left:10px;
+
+                    margin-top:10px;
+
+
+
+                }
+
+
+
+                .qiye2{
+
+                    width:265px; height:130px;
+
+
+
+                }
+
+                .qiye3{
+
+                    width:265px; height:50px;
+
+                    color:black;
+
+                    line-height:50px;
+
+                    text-align:center;
+
+
+
+                }
+
+                table{
+
+
+
+                    width:100%;
+
+
+
+
+
+                }
+
+            </style>
+
+
+
+                    <div class="mian_bd_right_bd">
+
+
+
+
+
+                 <p style="margin-top:0;margin-bottom:0;text-indent:32px;text-align:center;background:rgb(255,255,255)"><strong><span style="font-family: 小标宋;color: rgb(6, 30, 245);letter-spacing: 1px;font-size: 15px">广西森合高新科技股份有限公司</span></strong></p><p style="margin-top:0;margin-bottom:0;text-indent:32px;text-align:center;background:rgb(255,255,255)"><strong><span style="font-family: 小标宋;color: rgb(6, 30, 245);letter-spacing: 1px;font-size: 15px">Guangxi Senhe High Technology Co., Ltd.</span></strong></p><p style="margin-top:0;margin-bottom:0;text-indent:35px;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255)"><span style=";font-family:&#39;Helvetica Neue&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:宋体">（</span></span><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">下称</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">森合高科</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">）是专业从事环保型黄金选矿技术产品研发、生产和销售的高新科技企业。森合高科生产的</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">金蝉</span></span></strong><strong><sup><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 12px;vertical-align: super">®</span></sup></strong><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">环保型黄金选矿剂</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">，是</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">环保提金</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">专利品牌，可取代氰化钠在黄金工业中的应用。该产品被中华人民共和国工业和信息化部认定为</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">第三批专精特新</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">小巨人</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">企业</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">、入选</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">自然资源部《矿产资源节约和综合利用先进适用技术目录（</span>2022<span style="font-family:宋体">年版）》</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">、荣获</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">中国黄金协会科学技术一等奖</span><span style="font-family:Helvetica Neue">”“</span><span style="font-family:宋体">广西科技成果鉴定</span><span style="font-family:Helvetica Neue">”“</span><span style="font-family:宋体">广西科技创新基金奖</span><span style="font-family:Helvetica Neue">”</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">等荣誉。目前，森合高科与中国黄金集团、山东黄金集团、山东招金集团、紫金矿业集团及越南越老公司等国内外大型黄金生产企业建立了长期合作关系，</span></span><span style=";font-family:宋体;letter-spacing:1px;font-size:15px">（产品）</span><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px"><span style="font-family:宋体">在提高黄金生产企业经济效益的同时，大大缓解了黄金工业发展对人类生存环境带来的危害，真正实现</span><span style="font-family:Helvetica Neue">“</span><span style="font-family:宋体">绿色矿山，环保提金</span><span style="font-family:Helvetica Neue">”</span><span style="font-family:宋体">！</span></span><strong><span style="font-family: &#39;Helvetica Neue&#39;;letter-spacing: 1px;font-size: 15px"><span style="font-family:宋体">森合高科将以现代化的生产管理、物流运输及专业化的技术团队服务于全球客户</span></span></strong><span style=";font-family:&#39;Helvetica Neue&#39;;letter-spacing:1px;font-size:15px">!</span></p><p style="margin-top:0;margin-bottom:0;text-indent:35px;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255)"><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">Guangxi Senhe High</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;<span style="font-family:Times New Roman">Technology</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;Co., Ltd. (hereinafter referred to as “Senhe Hi-Tech<span style="font-family:Times New Roman">”) is a high-tech enterprise specializing in the research, development, production and sales of environmental-friendly gold </span></span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">dressing</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;technology products. </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">Jin Chan</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">®, an environmental</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">-</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">friendly gold </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">dressing agent</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;produced by Senhe Hi-Tech, is a patented brand of “environmental protection for gold extraction” and can replace the application of sodium cyanide in gold industry. </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">T</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">his product </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">was </span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">selected into the Catalogue of Advanced and Applicable Technologies for Saving and Comprehensive Utilization of Mineral Resources (2022 Edition) by the Ministry of Natural Resources of China</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">, and Senhe Hi-Tech</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;was recognized by the Ministry of Industry and Information Technology of China as </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">one of </span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">the third batch of specialized and innovative “little giant” enterprises, and won </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">such awards as </span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">the first prize of science and technology </span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">from</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;China Gold Association, appraisal of scientific and technological achievements in Guangxi and Guangxi Science and Technology Innovation Fund Award. At present, Senhe Hi-Tech has established long-term cooperative relations with large domestic and foreign gold producers, such as China National Gold Group, Shandong Gold Group, Shandong Zhaojin Group, Zijin Mining Group and Vietnam-Laos Company of Vietnam. The product not only improve</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;the economic benefits of gold producers, but also greatly alleviate</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">&nbsp;the harm caused to the environment by the development of the gold industry, truly realizing environmenta</span><span style=";font-family:宋体;color:rgb(62,62,62);letter-spacing:1px;font-size:15px"><span style="font-family:Times New Roman">l-</span></span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(62,62,62);letter-spacing:1px;font-size:15px">friendly gold extraction. Senhe Hi-Tech will serve customers all over the world with modern production management, logistics and transportation and professional technical team!</span></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815663221.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815718275.png"/></span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p style="text-indent: 37px"><strong><span style="font-family: 宋体;font-size: 19px">产品介绍：</span></strong><strong><span style="font-family: Tahoma;font-size: 19px"><span style="font-family:宋体">金蝉</span></span></strong><strong><sup><span style="font-family: Tahoma;font-size: 19px;vertical-align: super">®</span></sup></strong><strong><span style="font-family: Tahoma;font-size: 19px"><span style="font-family:宋体">环保型黄金选矿剂</span></span></strong></p><p style="text-indent: 37px"><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">Product Introduction: Jin Chan® </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">E</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">nvironmental-friendly </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">G</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">old </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">D</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">ressing </span></strong><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:Times New Roman">A</span></span></strong><strong><span style="font-family: &#39;Times New Roman&#39;;font-size: 19px">gent </span></strong></p><p style="text-indent: 28px"><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">金蝉</span>®<span style="font-family:宋体">环保型黄金选矿剂是广西森合高新科技股份有限公司自主研发的可取代氰化钠用于黄金选矿的高新科技产品，是</span><span style="font-family:Calibri">“</span><span style="font-family:宋体">环保提金</span><span style="font-family:Calibri">”</span><span style="font-family:宋体">专利产品；产品在不改变原有</span><span style="font-family:Calibri">“</span><span style="font-family:宋体">氰化提金</span><span style="font-family:Calibri">”</span><span style="font-family:宋体">工艺及设备的情况下，</span></span><span style=";font-family:宋体;font-size:14px">可</span><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">替代氰化钠用于黄金生产；同时具有</span></span><strong><span style="font-family: Calibri;font-size: 14px"><span style="font-family:宋体">低毒环保、回收率高、稳定性好、操作方便、回收快、用量少、成本低、储存运输方便</span></span></strong><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">等优点。</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">Jin Chan</span></span><span style=";font-family:Calibri;font-size:14px">®</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;environment</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">al</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">-friendly gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing agent</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;is</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">a high-tech product</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;used in gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing, which is </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">independently developed by Senhe High-tech </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">as its patent </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">product</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">of </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">“environmental</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">-</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">friendly gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">”</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">and can replace sodium cyanide; </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">t</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">he product can replace sodium cyanide in gold production without changing the original </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">technology of </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">“gold extraction</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">by </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">cyanide” and </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">the </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">equipment; </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">a</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">t the same time, it has the advantages of low toxicity, environmental</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">-friendly</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">, high recovery rate, good stability, </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">easy</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;operation, fast recovery, less dosage, low cost, convenient storage and transportation.</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815767757.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815797960.png"/></span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px;text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 0"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">产品规格形态：灰白色粉末状或颗粒状</span></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">产品包装及规格：袋装</span></span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Calibri">, </span></span><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">每袋产品净重</span>25KG±0.2KG<span style="font-family:宋体">（图示）</span></span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">，为防止假冒伪劣产品流入市场，于</span><span style="font-family:Calibri">2023</span><span style="font-family:宋体">年</span><span style="font-family:Calibri">2</span><span style="font-family:宋体">月起生产每一批次的产品，在原包装上加印防伪码。客户可通过扫描防伪码了解产品真伪、防伪码所属产品、查询次数、产品介绍、规格形态及公司信息。产品一袋一码，产品的客户流向信息、所属批次将备案于我司，进行全程追溯。</span></span></p><p style="margin-left:24px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Product form: greyish-white powder or granule</span></p><p style="margin-left:24px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Product packaging and specifications: bagged</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">, </span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">the net weight of each bag is 25</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">kg</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">±0.2</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">kg</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;(</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">as shown in the picture</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">). Each batch of products produced </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">after</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;February 2023</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">will be printed</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">anti-counterfeiting codes</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">on the original packaging </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">to avoid</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;shoddy products from entering the market.</span><span style=";font-family:宋体;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Customers can </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">learn</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">about</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;the authenticity of products, products to which the security code belongs, inquiry times, product introduction, specifications and company information by scanning the security code. Each package of products has a code, and the product flow information and batches are registered with our company for full traceability.</span></p><p style="margin-left: 24px"><strong><span style="font-family: 宋体;font-size: 19px"><span style="font-family:宋体">工厂实力</span> <span style="font-family:Tahoma">Factory Strength</span></span></strong></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815832424.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815864514.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815898434.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815939931.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046815962936.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816003390.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px"><span style=";font-family:宋体;font-size:14px">森合高科</span><span style=";font-family:Calibri;font-size:14px"><span style="font-family:宋体">金蝉</span>®<span style="font-family:宋体">环保型黄金选矿剂</span></span><span style=";font-family:宋体;font-size:14px">的</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">工厂占地面积超</span><span style="font-family:Calibri">100</span><span style="font-family:宋体">亩，配以先进的自动化生产线，从投料、进料、混料、冷却、破碎到包装实现全程自动化；厂区以严格的质量管理要求控制每个流程节点，以高量产和充足的货源，保障超</span><span style="font-family:Calibri">30</span><span style="font-family:宋体">多个国家的全球市场供应。</span></span></p><p style="text-indent:28px"><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">The factory of </span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Jin</span><span style=";font-family:宋体;font-size:14px">&nbsp;<span style="font-family:Times New Roman">Chan</span></span><span style=";font-family:Calibri;font-size:14px">®</span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;environmental-friendly gold </span><span style=";font-family:宋体;font-size:14px"><span style="font-family:Times New Roman">dressing agent</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;covers an area of over 100 mu, and is equipped with advanced automatic production lines to realize full automation from feeding, mixing, cooling, crushing to packaging. The factory controls each process node with strict quality management requirements, and ensures the global market supply of more than 30 countries with high mass production and sufficient supply.</span></p><p style="margin-left: 24px"><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p style="margin-left: 24px"><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816158758.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/1704681619693.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816212090.png"/></span></strong></p><p style="margin-left: 24px;text-indent: 14px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816305434.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816329128.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816356634.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p><strong><span style="font-family: Tahoma;font-size: 19px">&nbsp;</span></strong></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816392802.png"/><img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816423631.png"/></span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="margin-left: 24px"><span style=";font-family:Calibri;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">中国黄金集团田林高龙金矿</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Gao Long Gold Mine</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">of </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">China Gold Group</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">in </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Tianlin</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:宋体">甘肃鸿远矿业</span> </span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Gansu Hongyuan Mining Industry</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/1704681649728.png"/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="/Public/Admin/ueditor/php/upload//img/20240108/17046816516697.png"/></span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span></p><p style="text-indent: 70px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:宋体">广西容县金矿</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:宋体">老挝阿苏坡</span><span style="font-family:宋体">波里坎</span><span style="font-family:宋体">塞金矿</span></span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Guangxi Rongxian Gold Mine &nbsp;&nbsp;&nbsp;</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Bolikhamsai</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">Gold Mine</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">in Attapeu, Laos</span></span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:宋体;line-height:150%;font-size:14px">公司经过多年的励精图治与努力发展，得到政府部门的认可和大力支持，获得一系列荣誉及政府奖励。与多家国内外大型黄金企业达成长期战略合作协议，为推动中国黄金矿业发展而努力，实现矿业经济合作共赢、绿色持续和谐发展。</span></p><p style="text-indent: 28px;line-height: 150%"><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">After years of hard work and development, the company has been recognized and strongly supported by </span><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:Times New Roman">the </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">government and won a series of honors and awards</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;<span style="font-family:Times New Roman">from </span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">the</span><span style=";font-family:宋体;line-height:150%;font-size:14px">&nbsp;</span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">government. </span><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:Times New Roman">It</span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">&nbsp;ha</span><span style=";font-family:宋体;line-height:150%;font-size:14px"><span style="font-family:Times New Roman">s</span></span><span style=";font-family:&#39;Times New Roman&#39;;line-height:150%;font-size:14px">&nbsp;reached long-term strategic cooperation agreements with a number of large domestic and foreign gold enterprises, and worked hard to promote the development of China’s gold mining industry, so as to achieve win-win economic cooperation and green, sustainable and harmonious development of the mining industry.</span></p><p><br/></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer" style=" top:10px">
+
+  <div class="footTop" >
+
+    <div class="link">
+
+      <style type="text/css" media="screen">
+
+        .nav{
+
+            font-size:18px;
+
+        }
+
+        .menu{
+
+            width:1100px;
+
+        }
+
+        .link2 select {
+
+          font-size: 14px;
+
+          margin-right: 10px;
+
+          width: 165px;
+
+          height: 30px;
+
+          padding: 0 10px;
+
+        }
+
+        .link2{
+
+          width:170px; height:48px; float: left;
+
+        }
+
+        .banq{
+
+          width:150px;
+
+          height:30px;
+
+          line-height:30px;
+
+          float:left;
+
+          color:white;
+
+          font-size:14px;
+
+
+
+        }
+
+      </style>
+
+      <!-- <script src="assets/jquery.js"></script> -->
+
+      <script>
+
+        $(document).ready(function(){
+
+
+
+          $('.jump-select').on('change',function() {
+
+            var url = $(this).val();
+
+            // alert(url);
+
+            window.location.href=url;
+
+          })
+
+        });
+
+
+
+      </script>
+
+      <div style=" width:100%; height: 48px;  margin-top: 20px;">
+
+        <div  class="link2" style=" color: white; font-size:18px; line-height: 30px; width:110px">
+
+          友情链接：
+
+        </div>
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select" id="j1">
+
+              <option selected="selected">政府机构</option>
+
+              <option value="https://www.mnr.gov.cn/">中华人民共和国自然资源部</option><option value="https://www.cgs.gov.cn/">中国地质调查局</option><!--               <option value="http://www.gov.cn/guowuyuan/">国务院</option>
+
+
+
+              <option value="http://www.mnr.gov.cn/">自然资源部</option>
+
+
+
+              <option value="https://www.mee.gov.cn/">生态环境部</option>
+
+
+
+              <option value="https://www.mem.gov.cn/">应急管理部</option>
+
+
+
+              <option value="http://www.gxzf.gov.cn/index.shtml">广西壮族自治区人民政府</option>
+
+
+
+              <option value="https://www.gx.gov.cn/">南宁市人民政府</option>
+
+              <option value="https://www.fmprc.gov.cn/">外交部</option>
+
+              <option value="http://www.mofcom.gov.cn/">商务部</option>
+
+              <option value="https://www.most.gov.cn/index.html">科技部</option>
+
+              <option value="https://www.ccpit.org/">中国国际贸易促进会</option>
+
+ -->
+
+            </select>
+
+        </div>
+
+
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select">
+
+              <option selected="selected">有关部门</option>
+
+  <option value="https://www.caexpo.org.cn/">中国—东盟博览会</option><option value="https://dnr.gxzf.gov.cn/">广西壮族自治区自然资源厅</option><option value="https://zrzyj.nanning.gov.cn/">广西南宁市自然资源局</option><option value="http://dkj.gxzf.gov.cn/">广西壮族自治区地质矿产勘查开发局</option><option value="http://dzhj.dnr.gxzf.gov.cn/PortalWebSite">广西壮族自治区地质环境监测站</option><option value="https://zzzx.dnr.gxzf.gov.cn/">广西壮族自治区自然资源生态修复中心</option><option value="https://jyzx.dnr.gxzf.gov.cn/">广西壮族自治区矿产资源储量评审中心（交易中心）</option><option value="http://swt.gxzf.gov.cn">广西壮族自治区商务厅</option><option value="http://gxt.gxzf.gov.cn">广西壮族自治区工业和信息化厅</option><option value="http://wsb.gxzf.gov.cn">广西壮族自治区外事办公室</option><option value="http://kjt.gxzf.gov.cn">广西壮族自治区科学技术厅</option><option value="http://fgw.gxzf.gov.cn">广西壮族自治区发展和改革委员会</option>             <!--  <option value="http://shzz.mzt.gxzf.gov.cn/">广西社会组织信息平台</option>
+
+
+
+              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
+
+
+
+              <option value="http://mzt.gxzf.gov.cn/">广西民政厅</option>
+
+
+
+              <option value="http://sthjt.gxzf.gov.cn/">广西生态环境厅</option>
+
+
+
+              <option value="http://yjglt.gxzf.gov.cn/">广西应急管理厅</option>
+
+
+
+              <option value="http://gxt.gxzf.gov.cn/">广西经济和信息化厅</option>
+
+
+
+              <option value="http://fgw.gxzf.gov.cn/">广西发展和改革委员会</option>
+
+              <option value="http://wsb.gxzf.gov.cn/">自治区外事办</option>
+
+              <option value="https://www.ccpitgx.org/">中国贸促会广西分会</option>
+
+              <option value="https://dnr.gxzf.gov.cn/">广西自然资源厅</option>
+
+              <option value="http://kjt.gxzf.gov.cn/">科技厅</option>
+
+              <option value="http://swt.gxzf.gov.cn/">商务厅</option>
+
+              <option value="http://dkj.gxzf.gov.cn/">地矿局</option>
+
+ -->
+
+
+
+            </select>
+
+        </div>
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select">
+
+              <option selected="selected">有关协会</option>
+
+         <option value="https://www.chinania.org.cn">中国有色金属工业协会</option><option value="http://www.chinamining.org.cn">中国矿业联合会</option><option value="http://www.zjmining.org.cn">浙江省矿业联合会</option><option value="http://www.jskx.org/">江苏省矿业协会</option><option value="http://www.ahskysh.cn">安徽省矿业商会</option><option value="http://www.jxklw.cn/index.html">江西省矿业联合会</option><option value="http://hunanmining.com">湖南省矿业协会</option><option value="http://www.hbkylhh.com/">湖北省矿业联合会</option><option value="http://www.gzskyxh.com/">贵州省矿业协会</option><option value="http://www.scskx.com">四川省矿业协会</option><option value="https://www.cqsksxh.com">重庆市矿山协会</option><option value="http://www.ynmining.com">云南省矿业协会</option>
+
+   <!-- <option value="http://www.gxkyxh.com/">广西矿业协会</option>
+
+              <option value="http://www.zgss.org.cn/index.html">中国砂石协会</option>
+
+
+
+              <option value="http://www.hkga.org/site/">香港地理学会</option>
+
+
+
+              <option value="https://www.ctia.net.cn/">中国冶金矿山企业协会</option>
+
+
+
+              <option value="https://www.ctia.net.cn/">中国钨业协会</option>
+
+
+
+              <option value="http://www.hainanast.org.cn/">海南省地质地理学会</option>
+
+
+
+              <option value="http://www.ynmining.com/">云南省矿业协会</option>
+
+
+
+              <option value="https://cqdzkyxh.com/">重庆市地质矿业协会</option>
+
+
+
+              <option value="http://ccmassociation.cn/">中国化学矿业协会</option>
+
+
+
+              <option value="http://www.cnmia.cn/">中国非金属矿工业协会</option>
+
+
+
+              <option value="http://www.cngold.org.cn/">中国黄金协会</option>
+
+
+
+              <option value="https://www.chinania.org.cn/">中国有色金属工业协会</option>
+
+
+
+              <option value="http://www.geosociety.org.cn/">中国地质学会</option>
+
+
+
+              <option value="http://www.ahgcc.cn/index.html">安徽省工商业联合会</option>
+
+
+
+              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
+
+
+
+              <option value="http://www.jskx.org/">江苏省矿业协会</option>
+
+
+
+              <option value="http://www.zjmining.org.cn/">浙江省矿业联合会</option>
+
+
+
+              <option value="http://www.jxklw.cn/">江西省矿业联合会</option>
+
+
+
+              <option value="http://www.hbkylhh.com/">湖北矿业联合会</option>
+
+
+
+              <option value="http://www.sdkyxh.com/">山东省矿业协会</option>
+
+
+
+              <option value="http://ahskysh.cn/">安徽省矿业商会</option>
+
+
+
+              <option value="http://hunanmining.com/">湖南省矿业协会</option>
+
+              <option value="http://www.chinamining.org.cn/">中国矿业联合会</option>
+
+              <option value="http://www.scskx.com/">四川等各省区矿业商协会</option>
+
+
+
+ -->
+
+          </select>
+
+        </div>
+
+
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select" >
+
+              <option selected="selected">海外机构</option>
+
+                     <option value="https://ccop.asia/Index">东亚东南亚地学计划协调委员会（CCOP）</option><option value="https://nma.org/"> 矿产品协会 Mineral Products Association</option><option value="https://nma.org/">美国国家矿业协会NationalMining Association</option><option value="https://minerals.org.au/"> 澳大利亚矿产委员会  Minerals Council of Australia</option><option value="https://www.opec.org/opec_web/en/">欧佩克opec</option><option value="https://miningvietnam.com/?lang=en"> 越南矿业  Mining Vietnam</option>              <!-- <option value="http://dmkczywlw.com/">东盟各国能源矿产部</option> -->
+
+              <!-- <option value="http://www.igeo.cgs.gov.cn/">地质局和知名地学科学机构</option> -->
+
+              <!-- <option value="http://www.chinamining.org.cn/">国际权威矿业新闻网站</option> -->
+
+            </select>
+
+        </div>
+
+
+
+        <div  class="link2">
+
+            <select name="select" class="jump-select">
+
+              <option selected="selected">矿业企业</option>
+
+                 <option value="https://www.jlbkjt.com">吉利百矿</option><option value="https://www.camining.net/Kyforum">中国-东盟地学合作中心</option><option value="http://mn.southmn.com/">南方锰业集团有限公司</option><option value="https://www.chinalco.com.cn/">中国铝业股份有限公司广西分公司</option><option value="https://www.gctong.com/index.php?homepage=disidizhidui">广西壮族自治区第四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1977">广西壮族自治区地球物理勘察院</option><option value="www.egrcn.com">广东英格尔地质装备科技股份有限公司</option><option value="www.gxdkjt.cn">广西地矿建设集团有限公司</option><option value="www.bsbkjt.com">吉利百矿集团有限公司</option><option value="http://gxteam3.gxdkj.org.cn/">广西壮族自治区第三地质队</option><option value="https://www.liugong.com/">广西柳工机械股份有限公司</option><option value="https://www.china-tin.com/">广西华锡有色金属股份有限公司</option><option value="http://www.zggxhj.com/">中国黄金集团广西有限公司</option><option value="https://www.glut.edu.cn/">桂林理工大学地球科学学院</option><option value="www.bsgtjt.cn">广西百色工业投资发展集团有限公司</option><option value="www.gxshgk.com">广西森合高新科技股份有限公司</option><option value="www.tuhaogroup.com">广西途昊集团有限公司</option><option value="http://www.xin-manganese.com/Cn/">广西新振锰业集团有限公司</option><option value="http://ddy.gxdkj.org.cn/">广西壮族自治区地质调查院</option><option value="www.rigm.ac.cn">中国有色桂林矿产地质研究院有限公司</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1972">广西地矿华地工贸集团有限责任公司</option><option value="http://www.cnesip.com/Enterprise/Main.aspx?UserId=8668">核工业二三〇研究所</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1961">广西壮族自治区二七二地质队</option><option value="https://www.gxdkcs.gxdkj.org.cn">广西壮族自治区地质矿产测试研究中心</option><option value="http://gxjbtz.cn.gongxuku.com/">广西金璧投资有限公司</option><option value="http://www.gbm.ceec.net.cn/">中能建绿色建材有限公司</option><option value="http://www.ccicgx.com/">中国检验认证集团广西有限公司</option><option value="http://www.gmtgx.com/">扶绥桂民投新材料科技发展有限公司</option><option value="https://guigang06877.11467.com/">贵港市恒丰矿业有限责任公司</option><option value="https://www.gxu.edu.cn/">广西大学资源环境与材料学院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1927">广西壮族自治区二〇四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1954">广西壮族自治区二七〇地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1929">广西壮族自治区二七一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1974">广西壮族自治区二七三地质队</option><option value="https://www.274dzd.gxdkj.org.cn">广西壮族自治区二七四地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1978">广西壮族自治区三〇七核地质大队</option><option value="http://gx305.gxdkj.org.cn/">广西壮族自治区三〇五核地质大队</option><option value="www.gx310.gxdkj.org.cn">广西壮族自治区三一〇核地质大队（广西壮族自治区放射性核素检测中心）</option><option value="http://www.gxzrdk.com/">广西中润地质勘查有限公司</option><option value="https://www.glss.gxdkj.org.cn/">桂林山水大酒店有限责任公司</option><option value="http://yjyjy.b2b.chemm.cn/">广西冶金研究院有限公司</option><option value="http://gxhdy.gxdkj.org.cn/">广西壮族自治区海洋地质调查院</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1976">广西壮族自治区第一地质队</option><option value="https://www.dzzyisp.com/index.php?m=yp&amp;c=com_index&amp;userid=1956">广西壮族自治区第七地质队</option><option value="http://gxyg.gxdkj.org.cn/">广西壮族自治区遥感中心</option><option value="http://www.gxdzkcy.com/">中国冶金地质总局广西地质勘查院</option><option value="https://www.007swz.com/Company/95206910">广西中冶军创实业集团有限公司</option><option value="www.gxrunxing.cn">广西润兴新材料有限公司</option><option value="https://www.cchjjl.com/">长春黄金设计院工程建设管理有限公司</option><option value="http://gx.ccgc.cn/">中国煤炭地质总局广西煤炭地质局</option>            </select>
+
+        </div>
+
+
+
+        <div style=" width:700px; margin:0 auto 0; ">
+
+            <ul>
+
+              <li style="color:#fff;font-weight:bold; font-size:13px">
+
+                  <a href="#">网站首页</a> &nbsp &nbsp |
+
+              </li>
+
+            </ul>
+
+            <ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">分支机构</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">会员管理</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">行业新闻</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">项目推介</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">关于矿联</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">政策法规</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul><ul>
+
+                    <li style="color:#fff;font-weight:bold; font-size:13px;overflow: hidden;">
+
+                        <a href="javascript:" style="">党建学习</a>
+
+                        &nbsp|
+
+                    </li>
+
+                </ul>        </div>
+
+
+
+
+
+
+
+        <div style=" width:100%; margin:0 auto 0;float: left;text-align: center; ">
+
+          <div class="banq" style=" width:100%;">版权所有：广西海外矿业产业联合会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0771-2706577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：南宁市青秀区建政路1号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：gxhkl@qq.com</div>
+
+
+
+          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 30px;">
+
+            Copyright 2023－2024 All Rights Reserved
+
+          </div>
+
+
+
+          <div style=" width:300px; margin:0 auto 0 ; color:white; font-size:14px; margin-top: 10px;">
+
+            备案序号：桂ICP备2024032759号
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footbot" style=" width: 90%;">
+
+     <div style="height:200px;top: 150px;display:flex; float:right;margin-top: 40px;">
+
+                      <div style="float:left;width:160px;">
+
+                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
+
+                              <img src="assets/qrcode.jpg" alt="" width="100" height="100">
+
+                          </div>
+
+                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
+
+                              矿联官方微信公众号
+
+                          </div>
+
+                      </div>
+
+                      <!-- <div style="float:left;width:200px;clear: both;">
+
+                          <div style="height:auto; margin-top:10px; margin:0 auto 0">
+
+                              <img src="assets/shouji.png" alt="" width="100" height="100">
+
+                          </div>
+
+                          <div style="color:#fff;line-height:40px;text-align:center;font-size:16px;width:200px;margin-left: -50px;">
+
+                              手机网站
+
+                          </div>
+
+                      </div> -->
+
+                  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Public/kuangye/js/vue.min.js"></script>
+
+    <script src="/Public/kuangye/js/index.js"></script>
+
+
+
+    <script>
+
+        var app = new Vue({
+
+            el: '#app',
+
+            data: {
+
+                about_title: "", //详情标题
+
+
+
+            },
+
+            created() {
+
+                // 读取地址中的url
+
+                var url = window.location.href;
+
+                // 读取url中的参数
+
+
+
+                console.log(url);
+
+
+
+            },
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
 </html>
 
 
