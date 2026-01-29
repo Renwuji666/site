@@ -2342,10 +2342,10 @@ body {
 }
 
 .con_xmal_1.lb .xmal_pic img {
-    width: 150px !important;
-    height: 100px !important;
+    width: 140px !important;
+    height: 92px !important;
     object-fit: contain;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     box-shadow: none;
     border-radius: 0;
 }
@@ -2355,6 +2355,28 @@ body {
     color: #333;
     font-size: 14px;
     margin-top: 0 !important;
+}
+
+.enterprise-showcase .xmal_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enterprise-showcase .xmal_pic .pic_title {
+    position: static;
+    bottom: auto;
+    height: auto;
+    line-height: 1.4;
+    margin-top: 4px;
+    padding: 0 4px;
+    text-indent: 0;
+    background: none;
+    color: #333;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .carousel-btn {
@@ -2488,7 +2510,7 @@ body {
 
 .enterprise-showcase .showcase-wrapper {
     width: 100%;
-    padding: 0 70px;
+    padding: 0 24px;
     box-sizing: border-box;
     overflow: visible;
 }
@@ -2505,10 +2527,14 @@ body {
 }
 
 .enterprise-showcase .con_xmal_1.lb {
+    display: grid !important;
     grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
     justify-content: stretch;
+    gap: 16px;
 }
 
 .enterprise-showcase .con_xmal_1.lb .left {
     margin: 0 !important;
+    padding: 14px;
+    min-width: 0;
 }
