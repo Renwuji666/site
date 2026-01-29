@@ -32,73 +32,16 @@
     </div>
   </header>
 
-  <section class="carousel">
+  <section class="hero-video">
     <div class="mainBox">
-      <div class="slideBox" id="slideBox">
-        <div class="hd">
-          <ul>
-            <li class="item "></li>
-            <li class="item "></li>
-            <li class="item "></li>
-            <li class="item "></li>
-            <li class="item "></li>
-            <li class="item "></li>
-            <li class="item "></li>
-            <li class="item "></li>
-          </ul>
+      <div class="video-stage">
+        <button class="video-nav video-prev" type="button" aria-label="上一段视频">❮</button>
+        <div class="video-frame">
+          <video id="heroVideo" controls playsinline autoplay muted loop>
+            <source src="Public/kuanglian/index/images/xuanchuan.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="bd">
-          <ul>
-            <li>
-              <a href="index/index/artical/id/189" title="广西海外矿业产业联合会换届大会与第二届第一次会员代表大会暨海外矿业合作项目对接交流会系列活动在南宁举行">
-                <img src="assets/2026-01-16/6969fdb5e3d61.jpg" alt="">
-                <span class="title_slide_top">广西海外矿业产业联合会换届大会与第二届第一次会员代表大会暨海外矿业合作项目对接交流会系列活动在南宁举行</span>
-              </a>
-            </li>
-            <li>
-              <a href="index/index/artical/id/184" title="广西海外矿业产业联合会第一届第五次 理事会暨矿业业务培训班在桂林召开">
-                <img src="assets/2026-01-04/695a1b2f6c556.png" alt="">
-                <span class="title_slide_top">广西海外矿业产业联合会第一届第五次 理事会暨矿业业务培训班在桂林召开</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.gxhkl.com/index/index/artical/id/176" title="2024年中国—东盟（缅甸）矿业合作 项目对接交流会在缅甸内比都举办">
-                <img src="assets/2025-01-16/6788bb53512ae.png" alt="">
-                <span class="title_slide_top">2024年中国—东盟（缅甸）矿业合作 项目对接交流会在缅甸内比都举办</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.gxhkl.com/Index/index/artical/id/175" title="我会获《南洋商报》颁发的马中华彰品牌奖">
-                <img src="assets/2024-12-23/676906ce5a939.png" alt="">
-                <span class="title_slide_top">我会获《南洋商报》颁发的马中华彰品牌奖</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.gxhkl.com/Index/index/artical/id/174" title="2024年中国—东盟（马来西亚）矿业合作 项目对接交流会暨马来西亚矿业交流调研活动">
-                <img src="assets/2024-12-12/675a93a400269.png" alt="">
-                <span class="title_slide_top">2024年中国—东盟（马来西亚）矿业合作 项目对接交流会暨马来西亚矿业交流调研活动</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.gxhkl.com/index/index/artical/id/170" title="“南南矿业合作发展联盟倡议签约”仪式 在2024年第二届上海国际矿产业交流大会举行">
-                <img src="assets/2024-11-20/673d3ff7561da.png" alt="">
-                <span class="title_slide_top">“南南矿业合作发展联盟倡议签约”仪式 在2024年第二届上海国际矿产业交流大会举行</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.gxhkl.com/index/index/artical/id/165" title="广西海外矿业产业联合会跨省调研 共谋地学合作与矿业发展新机遇">
-                <img src="assets/2024-11-12/67337791d63bc.jpg" alt="">
-                <span class="title_slide_top">广西海外矿业产业联合会跨省调研 共谋地学合作与矿业发展新机遇</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.gxhkl.com/index/index/artical/id/161" title="广西海外矿业产业联合会第一届第三次理事会暨海外地质矿产勘查新技术应用培训交流会在都安召开">
-                <img src="assets/2024-08-14/66bc6a81edf2d.jpg" alt="">
-                <span class="title_slide_top">广西海外矿业产业联合会第一届第三次理事会暨海外地质矿产勘查新技术应用培训交流会在都安召开</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <button class="video-nav video-next" type="button" aria-label="下一段视频">❯</button>
       </div>
     </div>
   </section>
@@ -604,6 +547,34 @@
         showPage(0);
         startAuto();
       };
+    })();
+  </script>
+  <script>
+    (function () {
+      const sources = [
+        'Public/kuanglian/index/images/xuanchuan.mp4',
+        'Public/kuanglian/index/images/mp42.mp4'
+      ];
+      const video = document.getElementById('heroVideo');
+      const prev = document.querySelector('.video-prev');
+      const next = document.querySelector('.video-next');
+      if (!video) return;
+
+      let index = 0;
+
+      function setVideo(i) {
+        index = (i + sources.length) % sources.length;
+        video.pause();
+        video.src = sources[index];
+        video.load();
+      }
+
+      if (prev) {
+        prev.addEventListener('click', () => setVideo(index - 1));
+      }
+      if (next) {
+        next.addEventListener('click', () => setVideo(index + 1));
+      }
     })();
   </script>
   <script type="text/javascript" src="assets/index.js"></script>
