@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: #fbfbfd;
-    overflow-y: scroll;
+    overflow-y: auto;
+    /* Changed from scroll to auto to prevent mobile momentum hitches */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #1d1d1f;
     width: 100%;
+    overflow-x: hidden;
 }
 
 ul {
@@ -17,14 +23,15 @@ li {
 }
 
 .mainBox {
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     clear: both;
     overflow: hidden;
 }
 
 .miniNav {
-    min-width: 1100px;
+    width: 100%;
     height: 25px;
     line-height: 25px;
     background: url(../static/img/miniNav_bg.png);
@@ -44,7 +51,8 @@ li {
 }
 
 .mianBox {
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     overflow: hidden;
     margin: 0 auto;
     clear: both;
@@ -119,7 +127,7 @@ input[type="hidden" i] {
 
 .nav_toolbar {
     height: 134px;
-    min-width: 1100px;
+    width: 100%;
     position: relative;
 }
 
@@ -197,7 +205,7 @@ input[type="hidden" i] {
 
 .menu li:hover>ul {
     display: block;
-    *left: -22px
+    left: -22px;
 }
 
 .menu ul li {
@@ -231,7 +239,7 @@ input[type="hidden" i] {
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
-    // text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .nav {
@@ -243,7 +251,7 @@ a:-webkit-any-link {
     height: 40px;
     z-index: 99;
     position: relative;
-    min-width: 1100px;
+    width: 100%;
 }
 
 .hot_title {
@@ -308,7 +316,7 @@ a:-webkit-any-link {
 
 .slideBox .bd {
     position: relative;
-    // height: 100%;
+    /* height: 100%; */
     z-index: 0;
 }
 
@@ -324,7 +332,7 @@ a:-webkit-any-link {
 }
 
 .slideBox .bd img {
-    // width: 1100px;
+    /* width: 1100px; */
     width: 450px;
     height: 375px;
     display: block;
@@ -333,13 +341,13 @@ a:-webkit-any-link {
 .slideBox .title_slide_top {
     position: absolute;
     overflow: hidden;
-    // top: 400px;
+    /* top: 400px; */
     background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
-    // height: 55px;
+    /* height: 55px; */
     color: #fff;
     text-align: left;
-    // padding-left: 405px;
+    /* padding-left: 405px; */
     bottom: 0;
     left: 0;
     padding: 10px;
@@ -1693,7 +1701,7 @@ a:hover {
     font-weight: 600;
 }
 
-.menu li:hover > a {
+.menu li:hover>a {
     background: var(--primary);
     color: #fff;
 }
@@ -2152,7 +2160,8 @@ body {
 
 .mainBox,
 .mianBox {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .header .mainBox {
@@ -2240,10 +2249,18 @@ body {
 
 .video-frame video {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    /* Changed from 100vh to auto as default base style */
     display: block;
     background: #000;
     object-fit: cover;
+}
+
+@media (min-width: 1101px) {
+    .video-frame video {
+        height: 100vh;
+        /* Only apply 100vh on desktop screens */
+    }
 }
 
 .video-nav {
@@ -2636,12 +2653,13 @@ body {
 }
 
 /* Mobile responsive overrides */
-html,
+/* Remove redundant overflow-x: hidden on html to avoid mobile scroll traps */
 body {
     overflow-x: hidden;
 }
 
 @media (max-width: 992px) {
+
     .mainBox,
     .mianBox {
         width: 100% !important;
@@ -2816,18 +2834,27 @@ body {
     }
 
     .header-inner {
-        touch-action: pan-y;
+        /* Remove touch-action: pan-y as it can interfere with page scroll momentum */
     }
 
     .nav {
         overscroll-behavior-x: contain;
-        touch-action: pan-x;
+        /* Changed from pan-x to auto to allow vertical page scrolling even when swiping over the nav bar */
+        touch-action: auto;
     }
 
     .video-frame,
     .video-frame video {
-        touch-action: pan-y;
+        /* Remove touch-action: pan-y to ensure the browser handles vertical scrolling naturally */
         -webkit-user-select: none;
         user-select: none;
+    }
+}
+
+
+/* Mobile fix: disable video gesture capture on small screens */
+@media (max-width: 992px) {
+    .video-frame video {
+        pointer-events: none;
     }
 }

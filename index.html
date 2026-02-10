@@ -37,7 +37,7 @@
       <div class="video-stage">
         <button class="video-nav video-prev" type="button" aria-label="上一段视频">❮</button>
         <div class="video-frame">
-          <video id="heroVideo" controls playsinline autoplay muted loop>
+          <video id="heroVideo" playsinline autoplay muted loop>
             <source src="Public/kuanglian/index/images/xuanchuan.mp4" type="video/mp4">
           </video>
         </div>
@@ -574,6 +574,17 @@
       }
       if (next) {
         next.addEventListener('click', () => setVideo(index + 1));
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      if (window.matchMedia('(max-width: 992px)').matches) {
+        var video = document.getElementById('heroVideo');
+        if (video) {
+          video.controls = false;
+          video.setAttribute('controlsList', 'nodownload noplaybackrate');
+        }
       }
     })();
   </script>
