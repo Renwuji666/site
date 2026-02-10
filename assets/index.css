@@ -2809,3 +2809,25 @@ body {
         grid-template-columns: 1fr !important;
     }
 }
+
+@media (max-width: 992px) {
+    .header {
+        position: static;
+    }
+
+    .header-inner {
+        touch-action: pan-y;
+    }
+
+    .nav {
+        overscroll-behavior-x: contain;
+        touch-action: pan-x;
+    }
+
+    .video-frame,
+    .video-frame video {
+        touch-action: pan-y;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
