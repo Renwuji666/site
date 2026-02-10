@@ -2634,3 +2634,178 @@ body {
     padding: 14px;
     min-width: 0;
 }
+
+/* Mobile responsive overrides */
+html,
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 992px) {
+    .mainBox,
+    .mianBox {
+        width: 100% !important;
+        max-width: none !important;
+        box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .header .mainBox,
+    .hero-video .mainBox,
+    .enterprise-showcase .mainBox {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .miniNav,
+    .nav,
+    .nav_toolbar {
+        min-width: 0;
+    }
+
+    .header-inner {
+        padding: 10px 12px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 40px !important;
+        max-width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav ul {
+        width: max-content;
+        flex-wrap: nowrap;
+        gap: 8px !important;
+        padding: 0 4px 4px;
+    }
+
+    .nav li {
+        flex: 0 0 auto;
+    }
+
+    .nav a {
+        font-size: 15px !important;
+        padding: 6px 10px !important;
+        white-space: nowrap;
+    }
+
+    .video-stage {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .video-frame video {
+        width: 100%;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+        min-height: 220px;
+        max-height: 60vh;
+    }
+
+    .work-dynamics,
+    .enterprise-showcase,
+    .friend-links {
+        padding: 28px 0 !important;
+    }
+
+    .work-dynamics h2,
+    .enterprise-showcase h2,
+    .friend-links h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 18px;
+    }
+
+    .dynamics-list {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+    }
+
+    .dynamics-item {
+        padding: 14px;
+    }
+
+    .enterprise-showcase .showcase-wrapper {
+        padding: 0 12px !important;
+    }
+
+    .enterprise-showcase .con_xmal_1.lb {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+    }
+
+    .con_xmal_1.lb .left {
+        padding: 10px !important;
+    }
+
+    .con_xmal_1.lb .xmal_pic img {
+        width: 100% !important;
+        max-width: 130px;
+        height: 78px !important;
+    }
+
+    .enterprise-showcase .xmal_pic .pic_title,
+    .con_xmal_1.lb .xmal_pic .pic_title {
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+
+    .links-list {
+        gap: 8px;
+    }
+
+    .links-list a {
+        max-width: 100%;
+        padding: 6px 10px;
+        font-size: 13px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .footer-content {
+        padding: 20px 12px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-inner {
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 34px !important;
+    }
+
+    .nav a {
+        font-size: 14px !important;
+        padding: 6px 8px !important;
+    }
+
+    .video-nav,
+    .carousel-btn {
+        display: none !important;
+    }
+
+    .video-frame video {
+        min-height: 180px;
+    }
+
+    .enterprise-showcase .con_xmal_1.lb {
+        grid-template-columns: 1fr !important;
+    }
+}
