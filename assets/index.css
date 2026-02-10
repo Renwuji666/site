@@ -1593,6 +1593,7 @@ body {
 
 a {
     color: var(--text);
+    text-decoration: none;
 }
 
 a:hover {
@@ -2194,6 +2195,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .nav a:hover {
@@ -2526,6 +2528,7 @@ body {
     border-radius: 4px;
     color: #333;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .links-list a:hover {
